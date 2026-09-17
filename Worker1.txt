@@ -1,0 +1,1449 @@
+=== Worker1.txt (Worker Node 1 Log) ===
+============================================================
+Worker1 | Thread-based Worker | Ready Queue max=10
+============================================================
+
+[0.00] WORKER1 | INIT | INFO | 워커 Thread 시작, 마스터 연결 시도
+[0.00] WORKER1 | CONNECT | SUCCESS | 마스터 연결, 대기열 초기화 (0/10)
+[1.00] WORKER1 | RECV | INFO | KV[0001] 일반 작업 수신, 대기열=1/10
+[5.00] WORKER1 | RECV | INFO | KV[0005] 일반 작업 수신, 대기열=1/10
+[9.00] WORKER1 | RECV | INFO | KV[0009] 일반 작업 수신, 대기열=1/10
+[13.00] WORKER1 | RECV | INFO | KV[0013] 일반 작업 수신, 대기열=1/10
+[17.00] WORKER1 | RECV | INFO | KV[0017] 일반 작업 수신, 대기열=1/10
+[21.00] WORKER1 | RECV | INFO | KV[0021] 일반 작업 수신, 대기열=1/10
+[25.00] WORKER1 | RECV | INFO | KV[0025] 일반 작업 수신, 대기열=1/10
+[29.00] WORKER1 | RECV | INFO | KV[0029] 일반 작업 수신, 대기열=1/10
+[33.00] WORKER1 | RECV | INFO | KV[0033] 일반 작업 수신, 대기열=1/10
+[37.00] WORKER1 | RECV | INFO | KV[0037] 일반 작업 수신, 대기열=1/10
+[54.32] WORKER1 | PROC | SUCCESS | KV[0001] 저장 완료, 처리=1.17초, 대기=0.00초
+[55.32] WORKER1 | RECV | INFO | KV[0050] 일반 작업 수신, 대기열=1/10
+[56.32] WORKER1 | RECV | INFO | KV[0051] 일반 작업 수신, 대기열=1/10
+[57.32] WORKER1 | RECV | INFO | KV[0052] 일반 작업 수신, 대기열=1/10
+[58.32] WORKER1 | RECV | INFO | KV[0053] 일반 작업 수신, 대기열=1/10
+[59.32] WORKER1 | RECV | INFO | KV[0054] 일반 작업 수신, 대기열=1/10
+[60.32] WORKER1 | RECV | INFO | KV[0055] 일반 작업 수신, 대기열=1/10
+[61.32] WORKER1 | RECV | INFO | KV[0056] 일반 작업 수신, 대기열=1/10
+[62.32] WORKER1 | RECV | INFO | KV[0057] 일반 작업 수신, 대기열=1/10
+[63.32] WORKER1 | RECV | INFO | KV[0058] 일반 작업 수신, 대기열=1/10
+[64.32] WORKER1 | RECV | INFO | KV[0059] 일반 작업 수신, 대기열=1/10
+[271.77] WORKER1 | RECV | INFO | KV[0245] 일반 작업 수신, 대기열=1/10
+[272.77] WORKER1 | RECV | INFO | KV[0246] 일반 작업 수신, 대기열=1/10
+[273.77] WORKER1 | RECV | INFO | KV[0247] 일반 작업 수신, 대기열=1/10
+[274.77] WORKER1 | RECV | INFO | KV[0248] 일반 작업 수신, 대기열=1/10
+[275.77] WORKER1 | RECV | INFO | KV[0249] 일반 작업 수신, 대기열=1/10
+[276.77] WORKER1 | RECV | INFO | KV[0250] 일반 작업 수신, 대기열=1/10
+[277.77] WORKER1 | RECV | INFO | KV[0251] 일반 작업 수신, 대기열=1/10
+[278.77] WORKER1 | RECV | INFO | KV[0252] 일반 작업 수신, 대기열=1/10
+[279.77] WORKER1 | RECV | INFO | KV[0253] 일반 작업 수신, 대기열=1/10
+[280.77] WORKER1 | RECV | INFO | KV[0254] 일반 작업 수신, 대기열=1/10
+[687.80] WORKER1 | RECV | INFO | KV[0618] 일반 작업 수신, 대기열=1/10
+[688.80] WORKER1 | RECV | INFO | KV[0619] 일반 작업 수신, 대기열=1/10
+[689.80] WORKER1 | RECV | INFO | KV[0620] 일반 작업 수신, 대기열=1/10
+[690.80] WORKER1 | RECV | INFO | KV[0621] 일반 작업 수신, 대기열=1/10
+[691.80] WORKER1 | RECV | INFO | KV[0622] 일반 작업 수신, 대기열=1/10
+[692.80] WORKER1 | RECV | INFO | KV[0623] 일반 작업 수신, 대기열=1/10
+[693.80] WORKER1 | RECV | INFO | KV[0624] 일반 작업 수신, 대기열=1/10
+[694.80] WORKER1 | RECV | INFO | KV[0625] 일반 작업 수신, 대기열=1/10
+[695.80] WORKER1 | RECV | INFO | KV[0626] 일반 작업 수신, 대기열=1/10
+[699.01] WORKER1 | PROC | FAIL | KV[0005] 처리 실패, 20% 규칙
+[700.01] WORKER1 | RECV | INFO | KV[0005] 우선 재시도 작업 수신, 대기열=1/10
+[701.01] WORKER1 | RECV | INFO | KV[0627] 일반 작업 수신, 대기열=1/10
+[702.01] WORKER1 | RECV | INFO | KV[0628] 일반 작업 수신, 대기열=1/10
+[703.01] WORKER1 | RECV | INFO | KV[0629] 일반 작업 수신, 대기열=1/10
+[704.01] WORKER1 | RECV | INFO | KV[0630] 일반 작업 수신, 대기열=1/10
+[705.01] WORKER1 | RECV | INFO | KV[0631] 일반 작업 수신, 대기열=1/10
+[706.01] WORKER1 | RECV | INFO | KV[0632] 일반 작업 수신, 대기열=1/10
+[707.01] WORKER1 | RECV | INFO | KV[0633] 일반 작업 수신, 대기열=1/10
+[708.01] WORKER1 | RECV | INFO | KV[0634] 일반 작업 수신, 대기열=1/10
+[709.01] WORKER1 | RECV | INFO | KV[0635] 일반 작업 수신, 대기열=1/10
+[710.01] WORKER1 | RECV | INFO | KV[0636] 일반 작업 수신, 대기열=1/10
+[711.01] WORKER1 | RECV | INFO | KV[0637] 일반 작업 수신, 대기열=1/10
+[712.01] WORKER1 | RECV | INFO | KV[0638] 일반 작업 수신, 대기열=1/10
+[713.01] WORKER1 | RECV | INFO | KV[0639] 일반 작업 수신, 대기열=1/10
+[714.01] WORKER1 | RECV | INFO | KV[0640] 일반 작업 수신, 대기열=1/10
+[715.01] WORKER1 | RECV | INFO | KV[0641] 일반 작업 수신, 대기열=1/10
+[716.01] WORKER1 | RECV | INFO | KV[0642] 일반 작업 수신, 대기열=1/10
+[717.01] WORKER1 | RECV | INFO | KV[0643] 일반 작업 수신, 대기열=1/10
+[718.01] WORKER1 | RECV | INFO | KV[0644] 일반 작업 수신, 대기열=1/10
+[719.01] WORKER1 | RECV | INFO | KV[0645] 일반 작업 수신, 대기열=1/10
+[720.01] WORKER1 | RECV | INFO | KV[0646] 일반 작업 수신, 대기열=1/10
+[721.01] WORKER1 | RECV | INFO | KV[0647] 일반 작업 수신, 대기열=1/10
+[722.01] WORKER1 | RECV | INFO | KV[0648] 일반 작업 수신, 대기열=1/10
+[723.01] WORKER1 | RECV | INFO | KV[0649] 일반 작업 수신, 대기열=1/10
+[724.01] WORKER1 | RECV | INFO | KV[0650] 일반 작업 수신, 대기열=1/10
+[725.01] WORKER1 | RECV | INFO | KV[0651] 일반 작업 수신, 대기열=1/10
+[726.01] WORKER1 | RECV | INFO | KV[0652] 일반 작업 수신, 대기열=1/10
+[727.01] WORKER1 | RECV | INFO | KV[0653] 일반 작업 수신, 대기열=1/10
+[728.01] WORKER1 | RECV | INFO | KV[0654] 일반 작업 수신, 대기열=1/10
+[731.75] WORKER1 | PROC | SUCCESS | KV[0009] 저장 완료, 처리=2.74초, 대기=0.00초
+[732.75] WORKER1 | RECV | INFO | KV[0655] 일반 작업 수신, 대기열=1/10
+[733.75] WORKER1 | RECV | INFO | KV[0656] 일반 작업 수신, 대기열=1/10
+[734.75] WORKER1 | RECV | INFO | KV[0657] 일반 작업 수신, 대기열=1/10
+[735.75] WORKER1 | RECV | INFO | KV[0658] 일반 작업 수신, 대기열=1/10
+[736.75] WORKER1 | RECV | INFO | KV[0659] 일반 작업 수신, 대기열=1/10
+[737.75] WORKER1 | RECV | INFO | KV[0660] 일반 작업 수신, 대기열=1/10
+[738.75] WORKER1 | RECV | INFO | KV[0661] 일반 작업 수신, 대기열=1/10
+[739.75] WORKER1 | RECV | INFO | KV[0662] 일반 작업 수신, 대기열=1/10
+[740.75] WORKER1 | RECV | INFO | KV[0663] 일반 작업 수신, 대기열=1/10
+[741.75] WORKER1 | RECV | INFO | KV[0664] 일반 작업 수신, 대기열=1/10
+[742.75] WORKER1 | RECV | INFO | KV[0665] 일반 작업 수신, 대기열=1/10
+[743.75] WORKER1 | RECV | INFO | KV[0666] 일반 작업 수신, 대기열=1/10
+[744.75] WORKER1 | RECV | INFO | KV[0667] 일반 작업 수신, 대기열=1/10
+[745.75] WORKER1 | RECV | INFO | KV[0668] 일반 작업 수신, 대기열=1/10
+[746.75] WORKER1 | RECV | INFO | KV[0669] 일반 작업 수신, 대기열=1/10
+[747.75] WORKER1 | RECV | INFO | KV[0670] 일반 작업 수신, 대기열=1/10
+[748.75] WORKER1 | RECV | INFO | KV[0671] 일반 작업 수신, 대기열=1/10
+[749.75] WORKER1 | RECV | INFO | KV[0672] 일반 작업 수신, 대기열=1/10
+[750.75] WORKER1 | RECV | INFO | KV[0673] 일반 작업 수신, 대기열=1/10
+[751.75] WORKER1 | RECV | INFO | KV[0674] 일반 작업 수신, 대기열=1/10
+[752.75] WORKER1 | RECV | INFO | KV[0675] 일반 작업 수신, 대기열=1/10
+[753.75] WORKER1 | RECV | INFO | KV[0676] 일반 작업 수신, 대기열=1/10
+[754.75] WORKER1 | RECV | INFO | KV[0677] 일반 작업 수신, 대기열=1/10
+[755.75] WORKER1 | RECV | INFO | KV[0678] 일반 작업 수신, 대기열=1/10
+[756.75] WORKER1 | RECV | INFO | KV[0679] 일반 작업 수신, 대기열=1/10
+[757.75] WORKER1 | RECV | INFO | KV[0680] 일반 작업 수신, 대기열=1/10
+[758.75] WORKER1 | RECV | INFO | KV[0681] 일반 작업 수신, 대기열=1/10
+[759.75] WORKER1 | RECV | INFO | KV[0682] 일반 작업 수신, 대기열=1/10
+[760.75] WORKER1 | RECV | INFO | KV[0683] 일반 작업 수신, 대기열=1/10
+[763.06] WORKER1 | PROC | SUCCESS | KV[0013] 저장 완료, 처리=1.31초, 대기=0.00초
+[764.06] WORKER1 | RECV | INFO | KV[0684] 일반 작업 수신, 대기열=1/10
+[765.06] WORKER1 | RECV | INFO | KV[0685] 일반 작업 수신, 대기열=1/10
+[766.06] WORKER1 | RECV | INFO | KV[0686] 일반 작업 수신, 대기열=1/10
+[767.06] WORKER1 | RECV | INFO | KV[0687] 일반 작업 수신, 대기열=1/10
+[768.06] WORKER1 | RECV | INFO | KV[0688] 일반 작업 수신, 대기열=1/10
+[769.06] WORKER1 | RECV | INFO | KV[0689] 일반 작업 수신, 대기열=1/10
+[770.06] WORKER1 | RECV | INFO | KV[0690] 일반 작업 수신, 대기열=1/10
+[771.06] WORKER1 | RECV | INFO | KV[0691] 일반 작업 수신, 대기열=1/10
+[772.06] WORKER1 | RECV | INFO | KV[0692] 일반 작업 수신, 대기열=1/10
+[773.06] WORKER1 | RECV | INFO | KV[0693] 일반 작업 수신, 대기열=1/10
+[774.06] WORKER1 | RECV | INFO | KV[0694] 일반 작업 수신, 대기열=1/10
+[775.06] WORKER1 | RECV | INFO | KV[0695] 일반 작업 수신, 대기열=1/10
+[776.06] WORKER1 | RECV | INFO | KV[0696] 일반 작업 수신, 대기열=1/10
+[777.06] WORKER1 | RECV | INFO | KV[0697] 일반 작업 수신, 대기열=1/10
+[778.06] WORKER1 | RECV | INFO | KV[0698] 일반 작업 수신, 대기열=1/10
+[779.06] WORKER1 | RECV | INFO | KV[0699] 일반 작업 수신, 대기열=1/10
+[780.06] WORKER1 | RECV | INFO | KV[0700] 일반 작업 수신, 대기열=1/10
+[781.06] WORKER1 | RECV | INFO | KV[0701] 일반 작업 수신, 대기열=1/10
+[782.06] WORKER1 | RECV | INFO | KV[0702] 일반 작업 수신, 대기열=1/10
+[783.06] WORKER1 | RECV | INFO | KV[0703] 일반 작업 수신, 대기열=1/10
+[1076.52] WORKER1 | RECV | INFO | KV[0974] 일반 작업 수신, 대기열=1/10
+[1077.52] WORKER1 | RECV | INFO | KV[0975] 일반 작업 수신, 대기열=1/10
+[1078.52] WORKER1 | RECV | INFO | KV[0976] 일반 작업 수신, 대기열=1/10
+[1079.52] WORKER1 | RECV | INFO | KV[0977] 일반 작업 수신, 대기열=1/10
+[1080.52] WORKER1 | RECV | INFO | KV[0978] 일반 작업 수신, 대기열=1/10
+[1081.52] WORKER1 | RECV | INFO | KV[0979] 일반 작업 수신, 대기열=1/10
+[1082.52] WORKER1 | RECV | INFO | KV[0980] 일반 작업 수신, 대기열=1/10
+[1083.52] WORKER1 | RECV | INFO | KV[0981] 일반 작업 수신, 대기열=1/10
+[1084.52] WORKER1 | RECV | INFO | KV[0982] 일반 작업 수신, 대기열=1/10
+[1086.95] WORKER1 | PROC | SUCCESS | KV[0017] 저장 완료, 처리=1.43초, 대기=0.00초
+[1087.95] WORKER1 | RECV | INFO | KV[0983] 일반 작업 수신, 대기열=1/10
+[1088.95] WORKER1 | RECV | INFO | KV[0984] 일반 작업 수신, 대기열=1/10
+[1089.95] WORKER1 | RECV | INFO | KV[0985] 일반 작업 수신, 대기열=1/10
+[1090.95] WORKER1 | RECV | INFO | KV[0986] 일반 작업 수신, 대기열=1/10
+[1091.95] WORKER1 | RECV | INFO | KV[0987] 일반 작업 수신, 대기열=1/10
+[1092.95] WORKER1 | RECV | INFO | KV[0988] 일반 작업 수신, 대기열=1/10
+[1093.95] WORKER1 | RECV | INFO | KV[0989] 일반 작업 수신, 대기열=1/10
+[1094.95] WORKER1 | RECV | INFO | KV[0990] 일반 작업 수신, 대기열=1/10
+[1095.95] WORKER1 | RECV | INFO | KV[0991] 일반 작업 수신, 대기열=1/10
+[1096.95] WORKER1 | RECV | INFO | KV[0992] 일반 작업 수신, 대기열=1/10
+[1097.95] WORKER1 | RECV | INFO | KV[0993] 일반 작업 수신, 대기열=1/10
+[1098.95] WORKER1 | RECV | INFO | KV[0994] 일반 작업 수신, 대기열=1/10
+[1099.95] WORKER1 | RECV | INFO | KV[0995] 일반 작업 수신, 대기열=1/10
+[1100.95] WORKER1 | RECV | INFO | KV[0996] 일반 작업 수신, 대기열=1/10
+[1101.95] WORKER1 | RECV | INFO | KV[0997] 일반 작업 수신, 대기열=1/10
+[1102.95] WORKER1 | RECV | INFO | KV[0998] 일반 작업 수신, 대기열=1/10
+[1103.95] WORKER1 | RECV | INFO | KV[0999] 일반 작업 수신, 대기열=1/10
+[1104.95] WORKER1 | RECV | INFO | KV[1000] 일반 작업 수신, 대기열=1/10
+[1105.95] WORKER1 | RECV | INFO | KV[1001] 일반 작업 수신, 대기열=1/10
+[1106.95] WORKER1 | RECV | INFO | KV[1002] 일반 작업 수신, 대기열=1/10
+[1107.95] WORKER1 | RECV | INFO | KV[1003] 일반 작업 수신, 대기열=1/10
+[1108.95] WORKER1 | RECV | INFO | KV[1004] 일반 작업 수신, 대기열=1/10
+[1109.95] WORKER1 | RECV | INFO | KV[1005] 일반 작업 수신, 대기열=1/10
+[1110.95] WORKER1 | RECV | INFO | KV[1006] 일반 작업 수신, 대기열=1/10
+[1111.95] WORKER1 | RECV | INFO | KV[1007] 일반 작업 수신, 대기열=1/10
+[1112.95] WORKER1 | RECV | INFO | KV[1008] 일반 작업 수신, 대기열=1/10
+[1113.95] WORKER1 | RECV | INFO | KV[1009] 일반 작업 수신, 대기열=1/10
+[1114.95] WORKER1 | RECV | INFO | KV[1010] 일반 작업 수신, 대기열=1/10
+[1115.95] WORKER1 | RECV | INFO | KV[1011] 일반 작업 수신, 대기열=1/10
+[1119.69] WORKER1 | PROC | SUCCESS | KV[0021] 저장 완료, 처리=2.74초, 대기=0.00초
+[1120.69] WORKER1 | RECV | INFO | KV[1012] 일반 작업 수신, 대기열=1/10
+[1121.69] WORKER1 | RECV | INFO | KV[1013] 일반 작업 수신, 대기열=1/10
+[1122.69] WORKER1 | RECV | INFO | KV[1014] 일반 작업 수신, 대기열=1/10
+[1123.69] WORKER1 | RECV | INFO | KV[1015] 일반 작업 수신, 대기열=1/10
+[1124.69] WORKER1 | RECV | INFO | KV[1016] 일반 작업 수신, 대기열=1/10
+[1125.69] WORKER1 | RECV | INFO | KV[1017] 일반 작업 수신, 대기열=1/10
+[1126.69] WORKER1 | RECV | INFO | KV[1018] 일반 작업 수신, 대기열=1/10
+[1127.69] WORKER1 | RECV | INFO | KV[1019] 일반 작업 수신, 대기열=1/10
+[1128.69] WORKER1 | RECV | INFO | KV[1020] 일반 작업 수신, 대기열=1/10
+[1129.69] WORKER1 | RECV | INFO | KV[1021] 일반 작업 수신, 대기열=1/10
+[1130.69] WORKER1 | RECV | INFO | KV[1022] 일반 작업 수신, 대기열=1/10
+[1131.69] WORKER1 | RECV | INFO | KV[1023] 일반 작업 수신, 대기열=1/10
+[1132.69] WORKER1 | RECV | INFO | KV[1024] 일반 작업 수신, 대기열=1/10
+[1133.69] WORKER1 | RECV | INFO | KV[1025] 일반 작업 수신, 대기열=1/10
+[1134.69] WORKER1 | RECV | INFO | KV[1026] 일반 작업 수신, 대기열=1/10
+[1135.69] WORKER1 | RECV | INFO | KV[1027] 일반 작업 수신, 대기열=1/10
+[1136.69] WORKER1 | RECV | INFO | KV[1028] 일반 작업 수신, 대기열=1/10
+[1137.69] WORKER1 | RECV | INFO | KV[1029] 일반 작업 수신, 대기열=1/10
+[1138.69] WORKER1 | RECV | INFO | KV[1030] 일반 작업 수신, 대기열=1/10
+[1139.69] WORKER1 | RECV | INFO | KV[1031] 일반 작업 수신, 대기열=1/10
+[1140.69] WORKER1 | RECV | INFO | KV[1032] 일반 작업 수신, 대기열=1/10
+[1141.69] WORKER1 | RECV | INFO | KV[1033] 일반 작업 수신, 대기열=1/10
+[1142.69] WORKER1 | RECV | INFO | KV[1034] 일반 작업 수신, 대기열=1/10
+[1143.69] WORKER1 | RECV | INFO | KV[1035] 일반 작업 수신, 대기열=1/10
+[1144.69] WORKER1 | RECV | INFO | KV[1036] 일반 작업 수신, 대기열=1/10
+[1145.69] WORKER1 | RECV | INFO | KV[1037] 일반 작업 수신, 대기열=1/10
+[1146.69] WORKER1 | RECV | INFO | KV[1038] 일반 작업 수신, 대기열=1/10
+[1147.69] WORKER1 | RECV | INFO | KV[1039] 일반 작업 수신, 대기열=1/10
+[1148.69] WORKER1 | RECV | INFO | KV[1040] 일반 작업 수신, 대기열=1/10
+[1151.06] WORKER1 | PROC | SUCCESS | KV[0025] 저장 완료, 처리=1.37초, 대기=0.00초
+[1152.06] WORKER1 | RECV | INFO | KV[1041] 일반 작업 수신, 대기열=1/10
+[1153.06] WORKER1 | RECV | INFO | KV[1042] 일반 작업 수신, 대기열=1/10
+[1154.06] WORKER1 | RECV | INFO | KV[1043] 일반 작업 수신, 대기열=1/10
+[1155.06] WORKER1 | RECV | INFO | KV[1044] 일반 작업 수신, 대기열=1/10
+[1156.06] WORKER1 | RECV | INFO | KV[1045] 일반 작업 수신, 대기열=1/10
+[1157.06] WORKER1 | RECV | INFO | KV[1046] 일반 작업 수신, 대기열=1/10
+[1158.06] WORKER1 | RECV | INFO | KV[1047] 일반 작업 수신, 대기열=1/10
+[1159.06] WORKER1 | RECV | INFO | KV[1048] 일반 작업 수신, 대기열=1/10
+[1160.06] WORKER1 | RECV | INFO | KV[1049] 일반 작업 수신, 대기열=1/10
+[1161.06] WORKER1 | RECV | INFO | KV[1050] 일반 작업 수신, 대기열=1/10
+[1162.06] WORKER1 | RECV | INFO | KV[1051] 일반 작업 수신, 대기열=1/10
+[1163.06] WORKER1 | RECV | INFO | KV[1052] 일반 작업 수신, 대기열=1/10
+[1164.06] WORKER1 | RECV | INFO | KV[1053] 일반 작업 수신, 대기열=1/10
+[1165.06] WORKER1 | RECV | INFO | KV[1054] 일반 작업 수신, 대기열=1/10
+[1166.06] WORKER1 | RECV | INFO | KV[1055] 일반 작업 수신, 대기열=1/10
+[1167.06] WORKER1 | RECV | INFO | KV[1056] 일반 작업 수신, 대기열=1/10
+[1168.06] WORKER1 | RECV | INFO | KV[1057] 일반 작업 수신, 대기열=1/10
+[1169.06] WORKER1 | RECV | INFO | KV[1058] 일반 작업 수신, 대기열=1/10
+[1170.06] WORKER1 | RECV | INFO | KV[1059] 일반 작업 수신, 대기열=1/10
+[1171.06] WORKER1 | RECV | INFO | KV[1060] 일반 작업 수신, 대기열=1/10
+[1172.06] WORKER1 | RECV | INFO | KV[1061] 일반 작업 수신, 대기열=1/10
+[1173.06] WORKER1 | RECV | INFO | KV[1062] 일반 작업 수신, 대기열=1/10
+[1174.06] WORKER1 | RECV | INFO | KV[1063] 일반 작업 수신, 대기열=1/10
+[1175.06] WORKER1 | RECV | INFO | KV[1064] 일반 작업 수신, 대기열=1/10
+[1176.06] WORKER1 | RECV | INFO | KV[1065] 일반 작업 수신, 대기열=1/10
+[1177.06] WORKER1 | RECV | INFO | KV[1066] 일반 작업 수신, 대기열=1/10
+[1178.06] WORKER1 | RECV | INFO | KV[1067] 일반 작업 수신, 대기열=1/10
+[1179.06] WORKER1 | RECV | INFO | KV[1068] 일반 작업 수신, 대기열=1/10
+[1180.06] WORKER1 | RECV | INFO | KV[1069] 일반 작업 수신, 대기열=1/10
+[1182.33] WORKER1 | PROC | FAIL | KV[0029] 처리 실패, 20% 규칙
+[1183.33] WORKER1 | RECV | INFO | KV[0029] 우선 재시도 작업 수신, 대기열=1/10
+[1184.33] WORKER1 | RECV | INFO | KV[1070] 일반 작업 수신, 대기열=1/10
+[1185.33] WORKER1 | RECV | INFO | KV[1071] 일반 작업 수신, 대기열=1/10
+[1186.33] WORKER1 | RECV | INFO | KV[1072] 일반 작업 수신, 대기열=1/10
+[1187.33] WORKER1 | RECV | INFO | KV[1073] 일반 작업 수신, 대기열=1/10
+[1188.33] WORKER1 | RECV | INFO | KV[1074] 일반 작업 수신, 대기열=1/10
+[1189.33] WORKER1 | RECV | INFO | KV[1075] 일반 작업 수신, 대기열=1/10
+[1190.33] WORKER1 | RECV | INFO | KV[1076] 일반 작업 수신, 대기열=1/10
+[1191.33] WORKER1 | RECV | INFO | KV[1077] 일반 작업 수신, 대기열=1/10
+[1192.33] WORKER1 | RECV | INFO | KV[1078] 일반 작업 수신, 대기열=1/10
+[1193.33] WORKER1 | RECV | INFO | KV[1079] 일반 작업 수신, 대기열=1/10
+[1194.33] WORKER1 | RECV | INFO | KV[1080] 일반 작업 수신, 대기열=1/10
+[1195.33] WORKER1 | RECV | INFO | KV[1081] 일반 작업 수신, 대기열=1/10
+[1196.33] WORKER1 | RECV | INFO | KV[1082] 일반 작업 수신, 대기열=1/10
+[1197.33] WORKER1 | RECV | INFO | KV[1083] 일반 작업 수신, 대기열=1/10
+[1198.33] WORKER1 | RECV | INFO | KV[1084] 일반 작업 수신, 대기열=1/10
+[1199.33] WORKER1 | RECV | INFO | KV[1085] 일반 작업 수신, 대기열=1/10
+[1200.33] WORKER1 | RECV | INFO | KV[1086] 일반 작업 수신, 대기열=1/10
+[1201.33] WORKER1 | RECV | INFO | KV[1087] 일반 작업 수신, 대기열=1/10
+[1202.33] WORKER1 | RECV | INFO | KV[1088] 일반 작업 수신, 대기열=1/10
+[1203.33] WORKER1 | RECV | INFO | KV[1089] 일반 작업 수신, 대기열=1/10
+[1204.33] WORKER1 | RECV | INFO | KV[1090] 일반 작업 수신, 대기열=1/10
+[1205.33] WORKER1 | RECV | INFO | KV[1091] 일반 작업 수신, 대기열=1/10
+[1206.33] WORKER1 | RECV | INFO | KV[1092] 일반 작업 수신, 대기열=1/10
+[1207.33] WORKER1 | RECV | INFO | KV[1093] 일반 작업 수신, 대기열=1/10
+[1208.33] WORKER1 | RECV | INFO | KV[1094] 일반 작업 수신, 대기열=1/10
+[1209.33] WORKER1 | RECV | INFO | KV[1095] 일반 작업 수신, 대기열=1/10
+[1210.33] WORKER1 | RECV | INFO | KV[1096] 일반 작업 수신, 대기열=1/10
+[1211.33] WORKER1 | RECV | INFO | KV[1097] 일반 작업 수신, 대기열=1/10
+[1212.33] WORKER1 | RECV | INFO | KV[1098] 일반 작업 수신, 대기열=1/10
+[1213.33] WORKER1 | RECV | INFO | KV[1099] 일반 작업 수신, 대기열=1/10
+[1214.33] WORKER1 | RECV | INFO | KV[1100] 일반 작업 수신, 대기열=1/10
+[1215.33] WORKER1 | RECV | INFO | KV[1101] 일반 작업 수신, 대기열=1/10
+[1216.33] WORKER1 | RECV | INFO | KV[1102] 일반 작업 수신, 대기열=1/10
+[1217.33] WORKER1 | RECV | INFO | KV[1103] 일반 작업 수신, 대기열=1/10
+[1218.33] WORKER1 | RECV | INFO | KV[1104] 일반 작업 수신, 대기열=1/10
+[1219.33] WORKER1 | RECV | INFO | KV[1105] 일반 작업 수신, 대기열=1/10
+[1220.33] WORKER1 | RECV | INFO | KV[1106] 일반 작업 수신, 대기열=1/10
+[1223.35] WORKER1 | PROC | SUCCESS | KV[0033] 저장 완료, 처리=2.02초, 대기=0.00초
+[1224.35] WORKER1 | RECV | INFO | KV[1107] 일반 작업 수신, 대기열=1/10
+[1225.35] WORKER1 | RECV | INFO | KV[1108] 일반 작업 수신, 대기열=1/10
+[1226.35] WORKER1 | RECV | INFO | KV[1109] 일반 작업 수신, 대기열=1/10
+[1227.35] WORKER1 | RECV | INFO | KV[1110] 일반 작업 수신, 대기열=1/10
+[1228.35] WORKER1 | RECV | INFO | KV[1111] 일반 작업 수신, 대기열=1/10
+[1229.35] WORKER1 | RECV | INFO | KV[1112] 일반 작업 수신, 대기열=1/10
+[1230.35] WORKER1 | RECV | INFO | KV[1113] 일반 작업 수신, 대기열=1/10
+[1231.35] WORKER1 | RECV | INFO | KV[1114] 일반 작업 수신, 대기열=1/10
+[1232.35] WORKER1 | RECV | INFO | KV[1115] 일반 작업 수신, 대기열=1/10
+[1233.35] WORKER1 | RECV | INFO | KV[1116] 일반 작업 수신, 대기열=1/10
+[1234.35] WORKER1 | RECV | INFO | KV[1117] 일반 작업 수신, 대기열=1/10
+[1235.35] WORKER1 | RECV | INFO | KV[1118] 일반 작업 수신, 대기열=1/10
+[1236.35] WORKER1 | RECV | INFO | KV[1119] 일반 작업 수신, 대기열=1/10
+[1237.35] WORKER1 | RECV | INFO | KV[1120] 일반 작업 수신, 대기열=1/10
+[1238.35] WORKER1 | RECV | INFO | KV[1121] 일반 작업 수신, 대기열=1/10
+[1239.35] WORKER1 | RECV | INFO | KV[1122] 일반 작업 수신, 대기열=1/10
+[1240.35] WORKER1 | RECV | INFO | KV[1123] 일반 작업 수신, 대기열=1/10
+[1241.35] WORKER1 | RECV | INFO | KV[1124] 일반 작업 수신, 대기열=1/10
+[1242.35] WORKER1 | RECV | INFO | KV[1125] 일반 작업 수신, 대기열=1/10
+[1243.35] WORKER1 | RECV | INFO | KV[1126] 일반 작업 수신, 대기열=1/10
+[1246.08] WORKER1 | PROC | SUCCESS | KV[0037] 저장 완료, 처리=1.73초, 대기=0.00초
+[1247.08] WORKER1 | RECV | INFO | KV[1127] 일반 작업 수신, 대기열=1/10
+[1248.08] WORKER1 | RECV | INFO | KV[1128] 일반 작업 수신, 대기열=1/10
+[1249.08] WORKER1 | RECV | INFO | KV[1129] 일반 작업 수신, 대기열=1/10
+[1250.08] WORKER1 | RECV | INFO | KV[1130] 일반 작업 수신, 대기열=1/10
+[1251.08] WORKER1 | RECV | INFO | KV[1131] 일반 작업 수신, 대기열=1/10
+[1252.08] WORKER1 | RECV | INFO | KV[1132] 일반 작업 수신, 대기열=1/10
+[1253.08] WORKER1 | RECV | INFO | KV[1133] 일반 작업 수신, 대기열=1/10
+[1254.08] WORKER1 | RECV | INFO | KV[1134] 일반 작업 수신, 대기열=1/10
+[1255.08] WORKER1 | RECV | INFO | KV[1135] 일반 작업 수신, 대기열=1/10
+[1256.08] WORKER1 | RECV | INFO | KV[1136] 일반 작업 수신, 대기열=1/10
+[1257.08] WORKER1 | RECV | INFO | KV[1137] 일반 작업 수신, 대기열=1/10
+[1258.08] WORKER1 | RECV | INFO | KV[1138] 일반 작업 수신, 대기열=1/10
+[1259.08] WORKER1 | RECV | INFO | KV[1139] 일반 작업 수신, 대기열=1/10
+[1260.08] WORKER1 | RECV | INFO | KV[1140] 일반 작업 수신, 대기열=1/10
+[1261.08] WORKER1 | RECV | INFO | KV[1141] 일반 작업 수신, 대기열=1/10
+[1262.08] WORKER1 | RECV | INFO | KV[1142] 일반 작업 수신, 대기열=1/10
+[1263.08] WORKER1 | RECV | INFO | KV[1143] 일반 작업 수신, 대기열=1/10
+[1264.08] WORKER1 | RECV | INFO | KV[1144] 일반 작업 수신, 대기열=1/10
+[1265.08] WORKER1 | RECV | INFO | KV[1145] 일반 작업 수신, 대기열=1/10
+[1266.08] WORKER1 | RECV | INFO | KV[1146] 일반 작업 수신, 대기열=1/10
+[1267.08] WORKER1 | RECV | INFO | KV[1147] 일반 작업 수신, 대기열=1/10
+[1268.08] WORKER1 | RECV | INFO | KV[1148] 일반 작업 수신, 대기열=1/10
+[1269.08] WORKER1 | RECV | INFO | KV[1149] 일반 작업 수신, 대기열=1/10
+[1270.08] WORKER1 | RECV | INFO | KV[1150] 일반 작업 수신, 대기열=1/10
+[1271.08] WORKER1 | RECV | INFO | KV[1151] 일반 작업 수신, 대기열=1/10
+[1272.08] WORKER1 | RECV | INFO | KV[1152] 일반 작업 수신, 대기열=1/10
+[1273.08] WORKER1 | RECV | INFO | KV[1153] 일반 작업 수신, 대기열=1/10
+[1274.08] WORKER1 | RECV | INFO | KV[1154] 일반 작업 수신, 대기열=1/10
+[1275.08] WORKER1 | RECV | INFO | KV[1155] 일반 작업 수신, 대기열=1/10
+[1748.89] WORKER1 | PROC | SUCCESS | KV[0050] 저장 완료, 처리=1.88초, 대기=0.00초
+[1749.89] WORKER1 | RECV | INFO | KV[1580] 일반 작업 수신, 대기열=1/10
+[1750.89] WORKER1 | RECV | INFO | KV[1581] 일반 작업 수신, 대기열=1/10
+[1751.89] WORKER1 | RECV | INFO | KV[1582] 일반 작업 수신, 대기열=1/10
+[1752.89] WORKER1 | RECV | INFO | KV[1583] 일반 작업 수신, 대기열=1/10
+[1753.89] WORKER1 | RECV | INFO | KV[1584] 일반 작업 수신, 대기열=1/10
+[1754.89] WORKER1 | RECV | INFO | KV[1585] 일반 작업 수신, 대기열=1/10
+[1755.89] WORKER1 | RECV | INFO | KV[1586] 일반 작업 수신, 대기열=1/10
+[1756.89] WORKER1 | RECV | INFO | KV[1587] 일반 작업 수신, 대기열=1/10
+[1757.89] WORKER1 | RECV | INFO | KV[1588] 일반 작업 수신, 대기열=1/10
+[1758.89] WORKER1 | RECV | INFO | KV[1589] 일반 작업 수신, 대기열=1/10
+[3871.72] WORKER1 | RECV | INFO | KV[3499] 일반 작업 수신, 대기열=1/10
+[3872.72] WORKER1 | RECV | INFO | KV[3500] 일반 작업 수신, 대기열=1/10
+[3873.72] WORKER1 | RECV | INFO | KV[3501] 일반 작업 수신, 대기열=1/10
+[3874.72] WORKER1 | RECV | INFO | KV[3502] 일반 작업 수신, 대기열=1/10
+[3875.72] WORKER1 | RECV | INFO | KV[3503] 일반 작업 수신, 대기열=1/10
+[3876.72] WORKER1 | RECV | INFO | KV[3504] 일반 작업 수신, 대기열=1/10
+[3877.72] WORKER1 | RECV | INFO | KV[3505] 일반 작업 수신, 대기열=1/10
+[3878.72] WORKER1 | RECV | INFO | KV[3506] 일반 작업 수신, 대기열=1/10
+[3879.72] WORKER1 | RECV | INFO | KV[3507] 일반 작업 수신, 대기열=1/10
+[3880.72] WORKER1 | RECV | INFO | KV[3508] 일반 작업 수신, 대기열=1/10
+[3881.72] WORKER1 | RECV | INFO | KV[3509] 일반 작업 수신, 대기열=1/10
+[3882.72] WORKER1 | RECV | INFO | KV[3510] 일반 작업 수신, 대기열=1/10
+[3883.72] WORKER1 | RECV | INFO | KV[3511] 일반 작업 수신, 대기열=1/10
+[3884.72] WORKER1 | RECV | INFO | KV[3512] 일반 작업 수신, 대기열=1/10
+[3885.72] WORKER1 | RECV | INFO | KV[3513] 일반 작업 수신, 대기열=1/10
+[3886.72] WORKER1 | RECV | INFO | KV[3514] 일반 작업 수신, 대기열=1/10
+[3887.72] WORKER1 | RECV | INFO | KV[3515] 일반 작업 수신, 대기열=1/10
+[3888.72] WORKER1 | RECV | INFO | KV[3516] 일반 작업 수신, 대기열=1/10
+[3889.72] WORKER1 | RECV | INFO | KV[3517] 일반 작업 수신, 대기열=1/10
+[3891.88] WORKER1 | PROC | SUCCESS | KV[0051] 저장 완료, 처리=1.16초, 대기=0.88초
+[3892.88] WORKER1 | RECV | INFO | KV[3518] 일반 작업 수신, 대기열=1/10
+[3893.88] WORKER1 | RECV | INFO | KV[3519] 일반 작업 수신, 대기열=1/10
+[3894.88] WORKER1 | RECV | INFO | KV[3520] 일반 작업 수신, 대기열=1/10
+[3895.88] WORKER1 | RECV | INFO | KV[3521] 일반 작업 수신, 대기열=1/10
+[3896.88] WORKER1 | RECV | INFO | KV[3522] 일반 작업 수신, 대기열=1/10
+[3897.88] WORKER1 | RECV | INFO | KV[3523] 일반 작업 수신, 대기열=1/10
+[3898.88] WORKER1 | RECV | INFO | KV[3524] 일반 작업 수신, 대기열=1/10
+[3899.88] WORKER1 | RECV | INFO | KV[3525] 일반 작업 수신, 대기열=1/10
+[3900.88] WORKER1 | RECV | INFO | KV[3526] 일반 작업 수신, 대기열=1/10
+[3901.88] WORKER1 | RECV | INFO | KV[3527] 일반 작업 수신, 대기열=1/10
+[3902.88] WORKER1 | RECV | INFO | KV[3528] 일반 작업 수신, 대기열=1/10
+[3903.88] WORKER1 | RECV | INFO | KV[3529] 일반 작업 수신, 대기열=1/10
+[3904.88] WORKER1 | RECV | INFO | KV[3530] 일반 작업 수신, 대기열=1/10
+[3905.88] WORKER1 | RECV | INFO | KV[3531] 일반 작업 수신, 대기열=1/10
+[3906.88] WORKER1 | RECV | INFO | KV[3532] 일반 작업 수신, 대기열=1/10
+[3907.88] WORKER1 | RECV | INFO | KV[3533] 일반 작업 수신, 대기열=1/10
+[3908.88] WORKER1 | RECV | INFO | KV[3534] 일반 작업 수신, 대기열=1/10
+[3909.88] WORKER1 | RECV | INFO | KV[3535] 일반 작업 수신, 대기열=1/10
+[3910.88] WORKER1 | RECV | INFO | KV[3536] 일반 작업 수신, 대기열=1/10
+[3911.88] WORKER1 | RECV | INFO | KV[3537] 일반 작업 수신, 대기열=1/10
+[3912.88] WORKER1 | RECV | INFO | KV[3538] 일반 작업 수신, 대기열=1/10
+[3913.88] WORKER1 | RECV | INFO | KV[3539] 일반 작업 수신, 대기열=1/10
+[3914.88] WORKER1 | RECV | INFO | KV[3540] 일반 작업 수신, 대기열=1/10
+[3915.88] WORKER1 | RECV | INFO | KV[3541] 일반 작업 수신, 대기열=1/10
+[3916.88] WORKER1 | RECV | INFO | KV[3542] 일반 작업 수신, 대기열=1/10
+[3917.88] WORKER1 | RECV | INFO | KV[3543] 일반 작업 수신, 대기열=1/10
+[3918.88] WORKER1 | RECV | INFO | KV[3544] 일반 작업 수신, 대기열=1/10
+[3919.88] WORKER1 | RECV | INFO | KV[3545] 일반 작업 수신, 대기열=1/10
+[3920.88] WORKER1 | RECV | INFO | KV[3546] 일반 작업 수신, 대기열=1/10
+[3923.59] WORKER1 | PROC | SUCCESS | KV[0052] 저장 완료, 처리=1.71초, 대기=1.04초
+[3924.59] WORKER1 | RECV | INFO | KV[3547] 일반 작업 수신, 대기열=1/10
+[3925.59] WORKER1 | RECV | INFO | KV[3548] 일반 작업 수신, 대기열=1/10
+[3926.59] WORKER1 | RECV | INFO | KV[3549] 일반 작업 수신, 대기열=1/10
+[3927.59] WORKER1 | RECV | INFO | KV[3550] 일반 작업 수신, 대기열=1/10
+[3928.59] WORKER1 | RECV | INFO | KV[3551] 일반 작업 수신, 대기열=1/10
+[3929.59] WORKER1 | RECV | INFO | KV[3552] 일반 작업 수신, 대기열=1/10
+[3930.59] WORKER1 | RECV | INFO | KV[3553] 일반 작업 수신, 대기열=1/10
+[3931.59] WORKER1 | RECV | INFO | KV[3554] 일반 작업 수신, 대기열=1/10
+[3932.59] WORKER1 | RECV | INFO | KV[3555] 일반 작업 수신, 대기열=1/10
+[3933.59] WORKER1 | RECV | INFO | KV[3556] 일반 작업 수신, 대기열=1/10
+[3934.59] WORKER1 | RECV | INFO | KV[3557] 일반 작업 수신, 대기열=1/10
+[3935.59] WORKER1 | RECV | INFO | KV[3558] 일반 작업 수신, 대기열=1/10
+[3936.59] WORKER1 | RECV | INFO | KV[3559] 일반 작업 수신, 대기열=1/10
+[3937.59] WORKER1 | RECV | INFO | KV[3560] 일반 작업 수신, 대기열=1/10
+[3938.59] WORKER1 | RECV | INFO | KV[3561] 일반 작업 수신, 대기열=1/10
+[3939.59] WORKER1 | RECV | INFO | KV[3562] 일반 작업 수신, 대기열=1/10
+[3940.59] WORKER1 | RECV | INFO | KV[3563] 일반 작업 수신, 대기열=1/10
+[3941.59] WORKER1 | RECV | INFO | KV[3564] 일반 작업 수신, 대기열=1/10
+[3942.59] WORKER1 | RECV | INFO | KV[3565] 일반 작업 수신, 대기열=1/10
+[3943.59] WORKER1 | RECV | INFO | KV[3566] 일반 작업 수신, 대기열=1/10
+[3944.59] WORKER1 | RECV | INFO | KV[3567] 일반 작업 수신, 대기열=1/10
+[3945.59] WORKER1 | RECV | INFO | KV[3568] 일반 작업 수신, 대기열=1/10
+[3946.59] WORKER1 | RECV | INFO | KV[3569] 일반 작업 수신, 대기열=1/10
+[3947.59] WORKER1 | RECV | INFO | KV[3570] 일반 작업 수신, 대기열=1/10
+[3948.59] WORKER1 | RECV | INFO | KV[3571] 일반 작업 수신, 대기열=1/10
+[3949.59] WORKER1 | RECV | INFO | KV[3572] 일반 작업 수신, 대기열=1/10
+[3950.59] WORKER1 | RECV | INFO | KV[3573] 일반 작업 수신, 대기열=1/10
+[3951.59] WORKER1 | RECV | INFO | KV[3574] 일반 작업 수신, 대기열=1/10
+[3952.59] WORKER1 | RECV | INFO | KV[3575] 일반 작업 수신, 대기열=1/10
+[3955.95] WORKER1 | PROC | FAIL | KV[0053] 처리 실패, 20% 규칙
+[3956.95] WORKER1 | RECV | INFO | KV[0053] 우선 재시도 작업 수신, 대기열=1/10
+[3957.95] WORKER1 | RECV | INFO | KV[3576] 일반 작업 수신, 대기열=1/10
+[3958.95] WORKER1 | RECV | INFO | KV[3577] 일반 작업 수신, 대기열=1/10
+[3959.95] WORKER1 | RECV | INFO | KV[3578] 일반 작업 수신, 대기열=1/10
+[3960.95] WORKER1 | RECV | INFO | KV[3579] 일반 작업 수신, 대기열=1/10
+[3961.95] WORKER1 | RECV | INFO | KV[3580] 일반 작업 수신, 대기열=1/10
+[3962.95] WORKER1 | RECV | INFO | KV[3581] 일반 작업 수신, 대기열=1/10
+[3963.95] WORKER1 | RECV | INFO | KV[3582] 일반 작업 수신, 대기열=1/10
+[3964.95] WORKER1 | RECV | INFO | KV[3583] 일반 작업 수신, 대기열=1/10
+[3965.95] WORKER1 | RECV | INFO | KV[3584] 일반 작업 수신, 대기열=1/10
+[3966.95] WORKER1 | RECV | INFO | KV[3585] 일반 작업 수신, 대기열=1/10
+[3967.95] WORKER1 | RECV | INFO | KV[3586] 일반 작업 수신, 대기열=1/10
+[3968.95] WORKER1 | RECV | INFO | KV[3587] 일반 작업 수신, 대기열=1/10
+[3969.95] WORKER1 | RECV | INFO | KV[3588] 일반 작업 수신, 대기열=1/10
+[3970.95] WORKER1 | RECV | INFO | KV[3589] 일반 작업 수신, 대기열=1/10
+[3971.95] WORKER1 | RECV | INFO | KV[3590] 일반 작업 수신, 대기열=1/10
+[3972.95] WORKER1 | RECV | INFO | KV[3591] 일반 작업 수신, 대기열=1/10
+[3973.95] WORKER1 | RECV | INFO | KV[3592] 일반 작업 수신, 대기열=1/10
+[3974.95] WORKER1 | RECV | INFO | KV[3593] 일반 작업 수신, 대기열=1/10
+[3975.95] WORKER1 | RECV | INFO | KV[3594] 일반 작업 수신, 대기열=1/10
+[3976.95] WORKER1 | RECV | INFO | KV[3595] 일반 작업 수신, 대기열=1/10
+[3977.95] WORKER1 | RECV | INFO | KV[3596] 일반 작업 수신, 대기열=1/10
+[3978.95] WORKER1 | RECV | INFO | KV[3597] 일반 작업 수신, 대기열=1/10
+[3979.95] WORKER1 | RECV | INFO | KV[3598] 일반 작업 수신, 대기열=1/10
+[3980.95] WORKER1 | RECV | INFO | KV[3599] 일반 작업 수신, 대기열=1/10
+[3981.95] WORKER1 | RECV | INFO | KV[3600] 일반 작업 수신, 대기열=1/10
+[3982.95] WORKER1 | RECV | INFO | KV[3601] 일반 작업 수신, 대기열=1/10
+[3983.95] WORKER1 | RECV | INFO | KV[3602] 일반 작업 수신, 대기열=1/10
+[3984.95] WORKER1 | RECV | INFO | KV[3603] 일반 작업 수신, 대기열=1/10
+[3987.29] WORKER1 | PROC | SUCCESS | KV[0054] 저장 완료, 처리=1.34초, 대기=3.11초
+[3988.29] WORKER1 | RECV | INFO | KV[3604] 일반 작업 수신, 대기열=1/10
+[3989.29] WORKER1 | RECV | INFO | KV[3605] 일반 작업 수신, 대기열=1/10
+[3990.29] WORKER1 | RECV | INFO | KV[3606] 일반 작업 수신, 대기열=1/10
+[3991.29] WORKER1 | RECV | INFO | KV[3607] 일반 작업 수신, 대기열=1/10
+[3992.29] WORKER1 | RECV | INFO | KV[3608] 일반 작업 수신, 대기열=1/10
+[3993.29] WORKER1 | RECV | INFO | KV[3609] 일반 작업 수신, 대기열=1/10
+[3994.29] WORKER1 | RECV | INFO | KV[3610] 일반 작업 수신, 대기열=1/10
+[3995.29] WORKER1 | RECV | INFO | KV[3611] 일반 작업 수신, 대기열=1/10
+[3996.29] WORKER1 | RECV | INFO | KV[3612] 일반 작업 수신, 대기열=1/10
+[3997.29] WORKER1 | RECV | INFO | KV[3613] 일반 작업 수신, 대기열=1/10
+[3998.29] WORKER1 | RECV | INFO | KV[3614] 일반 작업 수신, 대기열=1/10
+[3999.29] WORKER1 | RECV | INFO | KV[3615] 일반 작업 수신, 대기열=1/10
+[4000.29] WORKER1 | RECV | INFO | KV[3616] 일반 작업 수신, 대기열=1/10
+[4001.29] WORKER1 | RECV | INFO | KV[3617] 일반 작업 수신, 대기열=1/10
+[4002.29] WORKER1 | RECV | INFO | KV[3618] 일반 작업 수신, 대기열=1/10
+[4003.29] WORKER1 | RECV | INFO | KV[3619] 일반 작업 수신, 대기열=1/10
+[4004.29] WORKER1 | RECV | INFO | KV[3620] 일반 작업 수신, 대기열=1/10
+[4005.29] WORKER1 | RECV | INFO | KV[3621] 일반 작업 수신, 대기열=1/10
+[4006.29] WORKER1 | RECV | INFO | KV[3622] 일반 작업 수신, 대기열=1/10
+[4007.29] WORKER1 | RECV | INFO | KV[3623] 일반 작업 수신, 대기열=1/10
+[4008.29] WORKER1 | RECV | INFO | KV[3624] 일반 작업 수신, 대기열=1/10
+[4009.29] WORKER1 | RECV | INFO | KV[3625] 일반 작업 수신, 대기열=1/10
+[4010.29] WORKER1 | RECV | INFO | KV[3626] 일반 작업 수신, 대기열=1/10
+[4011.29] WORKER1 | RECV | INFO | KV[3627] 일반 작업 수신, 대기열=1/10
+[4012.29] WORKER1 | RECV | INFO | KV[3628] 일반 작업 수신, 대기열=1/10
+[4013.29] WORKER1 | RECV | INFO | KV[3629] 일반 작업 수신, 대기열=1/10
+[4014.29] WORKER1 | RECV | INFO | KV[3630] 일반 작업 수신, 대기열=1/10
+[4015.29] WORKER1 | RECV | INFO | KV[3631] 일반 작업 수신, 대기열=1/10
+[4016.29] WORKER1 | RECV | INFO | KV[3632] 일반 작업 수신, 대기열=1/10
+[4019.67] WORKER1 | PROC | FAIL | KV[0055] 처리 실패, 20% 규칙
+[4020.67] WORKER1 | RECV | INFO | KV[0055] 우선 재시도 작업 수신, 대기열=1/10
+[4021.67] WORKER1 | RECV | INFO | KV[3633] 일반 작업 수신, 대기열=1/10
+[4022.67] WORKER1 | RECV | INFO | KV[3634] 일반 작업 수신, 대기열=1/10
+[4023.67] WORKER1 | RECV | INFO | KV[3635] 일반 작업 수신, 대기열=1/10
+[4024.67] WORKER1 | RECV | INFO | KV[3636] 일반 작업 수신, 대기열=1/10
+[4025.67] WORKER1 | RECV | INFO | KV[3637] 일반 작업 수신, 대기열=1/10
+[4026.67] WORKER1 | RECV | INFO | KV[3638] 일반 작업 수신, 대기열=1/10
+[4027.67] WORKER1 | RECV | INFO | KV[3639] 일반 작업 수신, 대기열=1/10
+[4028.67] WORKER1 | RECV | INFO | KV[3640] 일반 작업 수신, 대기열=1/10
+[4029.67] WORKER1 | RECV | INFO | KV[3641] 일반 작업 수신, 대기열=1/10
+[4030.67] WORKER1 | RECV | INFO | KV[3642] 일반 작업 수신, 대기열=1/10
+[4031.67] WORKER1 | RECV | INFO | KV[3643] 일반 작업 수신, 대기열=1/10
+[4032.67] WORKER1 | RECV | INFO | KV[3644] 일반 작업 수신, 대기열=1/10
+[4033.67] WORKER1 | RECV | INFO | KV[3645] 일반 작업 수신, 대기열=1/10
+[4034.67] WORKER1 | RECV | INFO | KV[3646] 일반 작업 수신, 대기열=1/10
+[4035.67] WORKER1 | RECV | INFO | KV[3647] 일반 작업 수신, 대기열=1/10
+[4036.67] WORKER1 | RECV | INFO | KV[3648] 일반 작업 수신, 대기열=1/10
+[4037.67] WORKER1 | RECV | INFO | KV[3649] 일반 작업 수신, 대기열=1/10
+[4038.67] WORKER1 | RECV | INFO | KV[3650] 일반 작업 수신, 대기열=1/10
+[4039.67] WORKER1 | RECV | INFO | KV[3651] 일반 작업 수신, 대기열=1/10
+[4040.67] WORKER1 | RECV | INFO | KV[3652] 일반 작업 수신, 대기열=1/10
+[4041.67] WORKER1 | RECV | INFO | KV[3653] 일반 작업 수신, 대기열=1/10
+[4042.67] WORKER1 | RECV | INFO | KV[3654] 일반 작업 수신, 대기열=1/10
+[4043.67] WORKER1 | RECV | INFO | KV[3655] 일반 작업 수신, 대기열=1/10
+[4044.67] WORKER1 | RECV | INFO | KV[3656] 일반 작업 수신, 대기열=1/10
+[4045.67] WORKER1 | RECV | INFO | KV[3657] 일반 작업 수신, 대기열=1/10
+[4046.67] WORKER1 | RECV | INFO | KV[3658] 일반 작업 수신, 대기열=1/10
+[4047.67] WORKER1 | RECV | INFO | KV[3659] 일반 작업 수신, 대기열=1/10
+[4048.67] WORKER1 | RECV | INFO | KV[3660] 일반 작업 수신, 대기열=1/10
+[4051.21] WORKER1 | PROC | SUCCESS | KV[0056] 저장 완료, 처리=1.54초, 대기=4.83초
+[4052.21] WORKER1 | RECV | INFO | KV[3661] 일반 작업 수신, 대기열=1/10
+[4053.21] WORKER1 | RECV | INFO | KV[3662] 일반 작업 수신, 대기열=1/10
+[4054.21] WORKER1 | RECV | INFO | KV[3663] 일반 작업 수신, 대기열=1/10
+[4055.21] WORKER1 | RECV | INFO | KV[3664] 일반 작업 수신, 대기열=1/10
+[4056.21] WORKER1 | RECV | INFO | KV[3665] 일반 작업 수신, 대기열=1/10
+[4057.21] WORKER1 | RECV | INFO | KV[3666] 일반 작업 수신, 대기열=1/10
+[4058.21] WORKER1 | RECV | INFO | KV[3667] 일반 작업 수신, 대기열=1/10
+[4059.21] WORKER1 | RECV | INFO | KV[3668] 일반 작업 수신, 대기열=1/10
+[4060.21] WORKER1 | RECV | INFO | KV[3669] 일반 작업 수신, 대기열=1/10
+[4061.21] WORKER1 | RECV | INFO | KV[3670] 일반 작업 수신, 대기열=1/10
+[4062.21] WORKER1 | RECV | INFO | KV[3671] 일반 작업 수신, 대기열=1/10
+[4063.21] WORKER1 | RECV | INFO | KV[3672] 일반 작업 수신, 대기열=1/10
+[4064.21] WORKER1 | RECV | INFO | KV[3673] 일반 작업 수신, 대기열=1/10
+[4065.21] WORKER1 | RECV | INFO | KV[3674] 일반 작업 수신, 대기열=1/10
+[4066.21] WORKER1 | RECV | INFO | KV[3675] 일반 작업 수신, 대기열=1/10
+[4067.21] WORKER1 | RECV | INFO | KV[3676] 일반 작업 수신, 대기열=1/10
+[4068.21] WORKER1 | RECV | INFO | KV[3677] 일반 작업 수신, 대기열=1/10
+[4069.21] WORKER1 | RECV | INFO | KV[3678] 일반 작업 수신, 대기열=1/10
+[4070.21] WORKER1 | RECV | INFO | KV[3679] 일반 작업 수신, 대기열=1/10
+[4071.21] WORKER1 | RECV | INFO | KV[3680] 일반 작업 수신, 대기열=1/10
+[4072.21] WORKER1 | RECV | INFO | KV[3681] 일반 작업 수신, 대기열=1/10
+[4073.21] WORKER1 | RECV | INFO | KV[3682] 일반 작업 수신, 대기열=1/10
+[4074.21] WORKER1 | RECV | INFO | KV[3683] 일반 작업 수신, 대기열=1/10
+[4075.21] WORKER1 | RECV | INFO | KV[3684] 일반 작업 수신, 대기열=1/10
+[4076.21] WORKER1 | RECV | INFO | KV[3685] 일반 작업 수신, 대기열=1/10
+[4077.21] WORKER1 | RECV | INFO | KV[3686] 일반 작업 수신, 대기열=1/10
+[4078.21] WORKER1 | RECV | INFO | KV[3687] 일반 작업 수신, 대기열=1/10
+[4079.21] WORKER1 | RECV | INFO | KV[3688] 일반 작업 수신, 대기열=1/10
+[4080.21] WORKER1 | RECV | INFO | KV[3689] 일반 작업 수신, 대기열=1/10
+[4082.42] WORKER1 | PROC | SUCCESS | KV[0057] 저장 완료, 처리=1.21초, 대기=5.36초
+[4083.42] WORKER1 | RECV | INFO | KV[3690] 일반 작업 수신, 대기열=1/10
+[4084.42] WORKER1 | RECV | INFO | KV[3691] 일반 작업 수신, 대기열=1/10
+[4085.42] WORKER1 | RECV | INFO | KV[3692] 일반 작업 수신, 대기열=1/10
+[4086.42] WORKER1 | RECV | INFO | KV[3693] 일반 작업 수신, 대기열=1/10
+[4087.42] WORKER1 | RECV | INFO | KV[3694] 일반 작업 수신, 대기열=1/10
+[4088.42] WORKER1 | RECV | INFO | KV[3695] 일반 작업 수신, 대기열=1/10
+[4089.42] WORKER1 | RECV | INFO | KV[3696] 일반 작업 수신, 대기열=1/10
+[4090.42] WORKER1 | RECV | INFO | KV[3697] 일반 작업 수신, 대기열=1/10
+[4091.42] WORKER1 | RECV | INFO | KV[3698] 일반 작업 수신, 대기열=1/10
+[4092.42] WORKER1 | RECV | INFO | KV[3699] 일반 작업 수신, 대기열=1/10
+[4093.42] WORKER1 | RECV | INFO | KV[3700] 일반 작업 수신, 대기열=1/10
+[4094.42] WORKER1 | RECV | INFO | KV[3701] 일반 작업 수신, 대기열=1/10
+[4095.42] WORKER1 | RECV | INFO | KV[3702] 일반 작업 수신, 대기열=1/10
+[4096.42] WORKER1 | RECV | INFO | KV[3703] 일반 작업 수신, 대기열=1/10
+[4097.42] WORKER1 | RECV | INFO | KV[3704] 일반 작업 수신, 대기열=1/10
+[4098.42] WORKER1 | RECV | INFO | KV[3705] 일반 작업 수신, 대기열=1/10
+[4099.42] WORKER1 | RECV | INFO | KV[3706] 일반 작업 수신, 대기열=1/10
+[4100.42] WORKER1 | RECV | INFO | KV[3707] 일반 작업 수신, 대기열=1/10
+[4101.42] WORKER1 | RECV | INFO | KV[3708] 일반 작업 수신, 대기열=1/10
+[4102.42] WORKER1 | RECV | INFO | KV[3709] 일반 작업 수신, 대기열=1/10
+[4103.42] WORKER1 | RECV | INFO | KV[3710] 일반 작업 수신, 대기열=1/10
+[4104.42] WORKER1 | RECV | INFO | KV[3711] 일반 작업 수신, 대기열=1/10
+[4105.42] WORKER1 | RECV | INFO | KV[3712] 일반 작업 수신, 대기열=1/10
+[4106.42] WORKER1 | RECV | INFO | KV[3713] 일반 작업 수신, 대기열=1/10
+[4107.42] WORKER1 | RECV | INFO | KV[3714] 일반 작업 수신, 대기열=1/10
+[4108.42] WORKER1 | RECV | INFO | KV[3715] 일반 작업 수신, 대기열=1/10
+[4109.42] WORKER1 | RECV | INFO | KV[3716] 일반 작업 수신, 대기열=1/10
+[4110.42] WORKER1 | RECV | INFO | KV[3717] 일반 작업 수신, 대기열=1/10
+[4111.42] WORKER1 | RECV | INFO | KV[3718] 일반 작업 수신, 대기열=1/10
+[4114.23] WORKER1 | PROC | SUCCESS | KV[0058] 저장 완료, 처리=1.81초, 대기=5.57초
+[4115.23] WORKER1 | RECV | INFO | KV[3719] 일반 작업 수신, 대기열=1/10
+[4116.23] WORKER1 | RECV | INFO | KV[3720] 일반 작업 수신, 대기열=1/10
+[4117.23] WORKER1 | RECV | INFO | KV[3721] 일반 작업 수신, 대기열=1/10
+[4118.23] WORKER1 | RECV | INFO | KV[3722] 일반 작업 수신, 대기열=1/10
+[4119.23] WORKER1 | RECV | INFO | KV[3723] 일반 작업 수신, 대기열=1/10
+[4120.23] WORKER1 | RECV | INFO | KV[3724] 일반 작업 수신, 대기열=1/10
+[4121.23] WORKER1 | RECV | INFO | KV[3725] 일반 작업 수신, 대기열=1/10
+[4122.23] WORKER1 | RECV | INFO | KV[3726] 일반 작업 수신, 대기열=1/10
+[4123.23] WORKER1 | RECV | INFO | KV[3727] 일반 작업 수신, 대기열=1/10
+[4124.23] WORKER1 | RECV | INFO | KV[3728] 일반 작업 수신, 대기열=1/10
+[4125.23] WORKER1 | RECV | INFO | KV[3729] 일반 작업 수신, 대기열=1/10
+[4126.23] WORKER1 | RECV | INFO | KV[3730] 일반 작업 수신, 대기열=1/10
+[4127.23] WORKER1 | RECV | INFO | KV[3731] 일반 작업 수신, 대기열=1/10
+[4128.23] WORKER1 | RECV | INFO | KV[3732] 일반 작업 수신, 대기열=1/10
+[4129.23] WORKER1 | RECV | INFO | KV[3733] 일반 작업 수신, 대기열=1/10
+[4130.23] WORKER1 | RECV | INFO | KV[3734] 일반 작업 수신, 대기열=1/10
+[4131.23] WORKER1 | RECV | INFO | KV[3735] 일반 작업 수신, 대기열=1/10
+[4132.23] WORKER1 | RECV | INFO | KV[3736] 일반 작업 수신, 대기열=1/10
+[4133.23] WORKER1 | RECV | INFO | KV[3737] 일반 작업 수신, 대기열=1/10
+[4134.23] WORKER1 | RECV | INFO | KV[3738] 일반 작업 수신, 대기열=1/10
+[4135.23] WORKER1 | RECV | INFO | KV[3739] 일반 작업 수신, 대기열=1/10
+[4136.23] WORKER1 | RECV | INFO | KV[3740] 일반 작업 수신, 대기열=1/10
+[4137.23] WORKER1 | RECV | INFO | KV[3741] 일반 작업 수신, 대기열=1/10
+[4138.23] WORKER1 | RECV | INFO | KV[3742] 일반 작업 수신, 대기열=1/10
+[4139.23] WORKER1 | RECV | INFO | KV[3743] 일반 작업 수신, 대기열=1/10
+[4140.23] WORKER1 | RECV | INFO | KV[3744] 일반 작업 수신, 대기열=1/10
+[4141.23] WORKER1 | RECV | INFO | KV[3745] 일반 작업 수신, 대기열=1/10
+[4142.23] WORKER1 | RECV | INFO | KV[3746] 일반 작업 수신, 대기열=1/10
+[4143.23] WORKER1 | RECV | INFO | KV[3747] 일반 작업 수신, 대기열=1/10
+[4146.01] WORKER1 | PROC | SUCCESS | KV[0059] 저장 완료, 처리=1.78초, 대기=6.38초
+[4147.01] WORKER1 | RECV | INFO | KV[3748] 일반 작업 수신, 대기열=1/10
+[4148.01] WORKER1 | RECV | INFO | KV[3749] 일반 작업 수신, 대기열=1/10
+[4149.01] WORKER1 | RECV | INFO | KV[3750] 일반 작업 수신, 대기열=1/10
+[4150.01] WORKER1 | RECV | INFO | KV[3751] 일반 작업 수신, 대기열=1/10
+[4151.01] WORKER1 | RECV | INFO | KV[3752] 일반 작업 수신, 대기열=1/10
+[4152.01] WORKER1 | RECV | INFO | KV[3753] 일반 작업 수신, 대기열=1/10
+[4153.01] WORKER1 | RECV | INFO | KV[3754] 일반 작업 수신, 대기열=1/10
+[4154.01] WORKER1 | RECV | INFO | KV[3755] 일반 작업 수신, 대기열=1/10
+[4155.01] WORKER1 | RECV | INFO | KV[3756] 일반 작업 수신, 대기열=1/10
+[4156.01] WORKER1 | RECV | INFO | KV[3757] 일반 작업 수신, 대기열=1/10
+[4157.01] WORKER1 | RECV | INFO | KV[3758] 일반 작업 수신, 대기열=1/10
+[4158.01] WORKER1 | RECV | INFO | KV[3759] 일반 작업 수신, 대기열=1/10
+[4159.01] WORKER1 | RECV | INFO | KV[3760] 일반 작업 수신, 대기열=1/10
+[4160.01] WORKER1 | RECV | INFO | KV[3761] 일반 작업 수신, 대기열=1/10
+[4161.01] WORKER1 | RECV | INFO | KV[3762] 일반 작업 수신, 대기열=1/10
+[4162.01] WORKER1 | RECV | INFO | KV[3763] 일반 작업 수신, 대기열=1/10
+[4163.01] WORKER1 | RECV | INFO | KV[3764] 일반 작업 수신, 대기열=1/10
+[4164.01] WORKER1 | RECV | INFO | KV[3765] 일반 작업 수신, 대기열=1/10
+[4165.01] WORKER1 | RECV | INFO | KV[3766] 일반 작업 수신, 대기열=1/10
+[4166.01] WORKER1 | RECV | INFO | KV[3767] 일반 작업 수신, 대기열=1/10
+[4167.01] WORKER1 | RECV | INFO | KV[3768] 일반 작업 수신, 대기열=1/10
+[4168.01] WORKER1 | RECV | INFO | KV[3769] 일반 작업 수신, 대기열=1/10
+[4169.01] WORKER1 | RECV | INFO | KV[3770] 일반 작업 수신, 대기열=1/10
+[4170.01] WORKER1 | RECV | INFO | KV[3771] 일반 작업 수신, 대기열=1/10
+[4171.01] WORKER1 | RECV | INFO | KV[3772] 일반 작업 수신, 대기열=1/10
+[4172.01] WORKER1 | RECV | INFO | KV[3773] 일반 작업 수신, 대기열=1/10
+[4173.01] WORKER1 | RECV | INFO | KV[3774] 일반 작업 수신, 대기열=1/10
+[4174.01] WORKER1 | RECV | INFO | KV[3775] 일반 작업 수신, 대기열=1/10
+[4175.01] WORKER1 | RECV | INFO | KV[3776] 일반 작업 수신, 대기열=1/10
+[6092.97] WORKER1 | PROC | SUCCESS | KV[0245] 저장 완료, 처리=1.20초, 대기=0.00초
+[6096.76] WORKER1 | PROC | SUCCESS | KV[0246] 저장 완료, 처리=2.79초, 대기=0.20초
+[6100.05] WORKER1 | PROC | FAIL | KV[0247] 처리 실패, 20% 규칙
+[6101.05] WORKER1 | RECV | INFO | KV[0247] 우선 재시도 작업 수신, 대기열=1/10
+[6103.68] WORKER1 | PROC | SUCCESS | KV[0248] 저장 완료, 처리=1.63초, 대기=3.27초
+[6107.35] WORKER1 | PROC | SUCCESS | KV[0249] 저장 완료, 처리=2.67초, 대기=3.90초
+[6111.32] WORKER1 | PROC | SUCCESS | KV[0250] 저장 완료, 처리=2.97초, 대기=5.57초
+[6113.92] WORKER1 | PROC | SUCCESS | KV[0251] 저장 완료, 처리=1.60초, 대기=7.54초
+[6117.23] WORKER1 | PROC | SUCCESS | KV[0252] 저장 완료, 처리=2.31초, 대기=8.14초
+[6120.59] WORKER1 | PROC | SUCCESS | KV[0253] 저장 완료, 처리=2.36초, 대기=9.45초
+[6122.95] WORKER1 | PROC | FAIL | KV[0254] 처리 실패, 20% 규칙
+[6123.95] WORKER1 | RECV | INFO | KV[0254] 우선 재시도 작업 수신, 대기열=1/10
+[6126.47] WORKER1 | PROC | SUCCESS | KV[0618] 저장 완료, 처리=1.52초, 대기=0.00초
+[6128.54] WORKER1 | PROC | SUCCESS | KV[0619] 저장 완료, 처리=1.07초, 대기=0.52초
+[6131.53] WORKER1 | PROC | SUCCESS | KV[0620] 저장 완료, 처리=1.99초, 대기=0.59초
+[6134.68] WORKER1 | PROC | SUCCESS | KV[0621] 저장 완료, 처리=2.15초, 대기=1.59초
+[6138.10] WORKER1 | PROC | SUCCESS | KV[0622] 저장 완료, 처리=2.42초, 대기=2.74초
+[6141.78] WORKER1 | PROC | FAIL | KV[0623] 처리 실패, 20% 규칙
+[6142.78] WORKER1 | RECV | INFO | KV[0623] 우선 재시도 작업 수신, 대기열=1/10
+[6145.50] WORKER1 | PROC | SUCCESS | KV[0624] 저장 완료, 처리=1.72초, 대기=5.84초
+[6149.08] WORKER1 | PROC | SUCCESS | KV[0625] 저장 완료, 처리=2.58초, 대기=6.57초
+[6151.64] WORKER1 | PROC | SUCCESS | KV[0626] 저장 완료, 처리=1.56초, 대기=8.14초
+[6155.13] WORKER1 | PROC | SUCCESS | KV[0005] 저장 완료, 처리=2.49초, 대기=5.49초
+[6157.18] WORKER1 | PROC | SUCCESS | KV[0627] 저장 완료, 처리=1.05초, 대기=6.98초
+[6160.94] WORKER1 | PROC | SUCCESS | KV[0628] 저장 완료, 처리=2.76초, 대기=7.03초
+[6163.33] WORKER1 | PROC | SUCCESS | KV[0629] 저장 완료, 처리=1.39초, 대기=8.79초
+[6165.43] WORKER1 | PROC | FAIL | KV[0630] 처리 실패, 20% 규칙
+[6166.43] WORKER1 | RECV | INFO | KV[0630] 우선 재시도 작업 수신, 대기열=1/10
+[6169.58] WORKER1 | PROC | SUCCESS | KV[0631] 저장 완료, 처리=2.15초, 대기=9.27초
+[6173.31] WORKER1 | PROC | SUCCESS | KV[0632] 저장 완료, 처리=2.73초, 대기=10.42초
+[6177.28] WORKER1 | PROC | FAIL | KV[0633] 처리 실패, 20% 규칙
+[6178.28] WORKER1 | RECV | INFO | KV[0633] 우선 재시도 작업 수신, 대기열=1/10
+[6180.93] WORKER1 | PROC | SUCCESS | KV[0634] 저장 완료, 처리=1.65초, 대기=14.13초
+[6187.06] WORKER1 | RECV | INFO | KV[0514] 우선 재시도 작업 수신, 대기열=1/10
+[6426.56] WORKER1 | PROC | SUCCESS | KV[0635] 저장 완료, 처리=2.85초, 대기=14.78초
+[6429.84] WORKER1 | PROC | SUCCESS | KV[0636] 저장 완료, 처리=2.28초, 대기=16.64초
+[6432.44] WORKER1 | PROC | SUCCESS | KV[0637] 저장 완료, 처리=1.60초, 대기=17.92초
+[6435.34] WORKER1 | PROC | FAIL | KV[0638] 처리 실패, 20% 규칙
+[6439.61] WORKER1 | PROC | SUCCESS | KV[0639] 저장 완료, 처리=2.27초, 대기=19.42초
+[6442.12] WORKER1 | PROC | SUCCESS | KV[0640] 저장 완료, 처리=1.51초, 대기=20.70초
+[6444.47] WORKER1 | PROC | SUCCESS | KV[0641] 저장 완료, 처리=1.35초, 대기=21.21초
+[6447.77] WORKER1 | PROC | FAIL | KV[0642] 처리 실패, 20% 규칙
+[6448.77] WORKER1 | RECV | INFO | KV[0642] 우선 재시도 작업 수신, 대기열=1/10
+[6451.67] WORKER1 | PROC | SUCCESS | KV[0643] 저장 완료, 처리=1.90초, 대기=22.86초
+[6453.80] WORKER1 | PROC | FAIL | KV[0644] 처리 실패, 20% 규칙
+[6454.80] WORKER1 | RECV | INFO | KV[0644] 우선 재시도 작업 수신, 대기열=1/10
+[6457.72] WORKER1 | PROC | SUCCESS | KV[0645] 저장 완료, 처리=1.92초, 대기=23.89초
+[6460.63] WORKER1 | PROC | SUCCESS | KV[0646] 저장 완료, 처리=1.91초, 대기=24.81초
+[6464.31] WORKER1 | PROC | SUCCESS | KV[0647] 저장 완료, 처리=2.68초, 대기=25.73초
+[6466.89] WORKER1 | PROC | FAIL | KV[0648] 처리 실패, 20% 규칙
+[6467.89] WORKER1 | RECV | INFO | KV[0648] 우선 재시도 작업 수신, 대기열=1/10
+[6470.62] WORKER1 | PROC | SUCCESS | KV[0649] 저장 완료, 처리=1.73초, 대기=27.99초
+[6472.74] WORKER1 | PROC | SUCCESS | KV[0650] 저장 완료, 처리=1.12초, 대기=28.72초
+[6476.57] WORKER1 | PROC | SUCCESS | KV[0651] 저장 완료, 처리=2.83초, 대기=28.84초
+[6479.63] WORKER1 | PROC | SUCCESS | KV[0652] 저장 완료, 처리=2.06초, 대기=30.67초
+[6482.74] WORKER1 | PROC | SUCCESS | KV[0653] 저장 완료, 처리=2.11초, 대기=31.74초
+[6485.58] WORKER1 | PROC | FAIL | KV[0654] 처리 실패, 20% 규칙
+[6486.58] WORKER1 | RECV | INFO | KV[0654] 우선 재시도 작업 수신, 대기열=1/10
+[6489.65] WORKER1 | PROC | FAIL | KV[0655] 처리 실패, 20% 규칙
+[6490.65] WORKER1 | RECV | INFO | KV[0655] 우선 재시도 작업 수신, 대기열=1/10
+[6494.08] WORKER1 | PROC | SUCCESS | KV[0656] 저장 완료, 처리=2.43초, 대기=31.02초
+[6497.10] WORKER1 | PROC | SUCCESS | KV[0657] 저장 완료, 처리=2.02초, 대기=32.45초
+[6499.38] WORKER1 | PROC | SUCCESS | KV[0658] 저장 완료, 처리=1.28초, 대기=33.47초
+[6502.66] WORKER1 | PROC | SUCCESS | KV[0659] 저장 완료, 처리=2.28초, 대기=33.75초
+[6505.45] WORKER1 | PROC | SUCCESS | KV[0660] 저장 완료, 처리=1.79초, 대기=35.03초
+[6511.87] WORKER1 | RECV | INFO | KV[0462] 우선 재시도 작업 수신, 대기열=1/10
+[6761.70] WORKER1 | PROC | SUCCESS | KV[0661] 저장 완료, 처리=1.03초, 대기=35.82초
+[6764.01] WORKER1 | PROC | SUCCESS | KV[0662] 저장 완료, 처리=1.31초, 대기=35.85초
+[6766.10] WORKER1 | PROC | SUCCESS | KV[0663] 저장 완료, 처리=1.09초, 대기=36.16초
+[6769.33] WORKER1 | PROC | SUCCESS | KV[0664] 저장 완료, 처리=2.23초, 대기=36.25초
+[6772.27] WORKER1 | PROC | SUCCESS | KV[0665] 저장 완료, 처리=1.94초, 대기=37.48초
+[6775.88] WORKER1 | PROC | SUCCESS | KV[0666] 저장 완료, 처리=2.61초, 대기=38.42초
+[6779.06] WORKER1 | PROC | SUCCESS | KV[0667] 저장 완료, 처리=2.18초, 대기=40.03초
+[6782.35] WORKER1 | PROC | SUCCESS | KV[0668] 저장 완료, 처리=2.29초, 대기=41.21초
+[6784.66] WORKER1 | PROC | SUCCESS | KV[0669] 저장 완료, 처리=1.31초, 대기=42.50초
+[6788.08] WORKER1 | PROC | FAIL | KV[0670] 처리 실패, 20% 규칙
+[6789.08] WORKER1 | RECV | INFO | KV[0670] 우선 재시도 작업 수신, 대기열=1/10
+[6791.58] WORKER1 | PROC | SUCCESS | KV[0671] 저장 완료, 처리=1.50초, 대기=44.23초
+[6794.15] WORKER1 | PROC | FAIL | KV[0672] 처리 실패, 20% 규칙
+[6798.59] WORKER1 | PROC | SUCCESS | KV[0673] 저장 완료, 처리=2.44초, 대기=45.30초
+[6800.86] WORKER1 | PROC | FAIL | KV[0674] 처리 실패, 20% 규칙
+[6801.86] WORKER1 | RECV | INFO | KV[0674] 우선 재시도 작업 수신, 대기열=1/10
+[6805.76] WORKER1 | PROC | SUCCESS | KV[0675] 저장 완료, 처리=2.90초, 대기=47.01초
+[6807.83] WORKER1 | PROC | SUCCESS | KV[0676] 저장 완료, 처리=1.07초, 대기=48.91초
+[6811.43] WORKER1 | PROC | SUCCESS | KV[0677] 저장 완료, 처리=2.60초, 대기=48.99초
+[6814.13] WORKER1 | PROC | SUCCESS | KV[0678] 저장 완료, 처리=1.70초, 대기=50.59초
+[6817.13] WORKER1 | PROC | SUCCESS | KV[0679] 저장 완료, 처리=2.00초, 대기=51.29초
+[6820.56] WORKER1 | PROC | SUCCESS | KV[0680] 저장 완료, 처리=2.43초, 대기=52.29초
+[6824.44] WORKER1 | PROC | SUCCESS | KV[0681] 저장 완료, 처리=2.88초, 대기=53.72초
+[6827.58] WORKER1 | PROC | SUCCESS | KV[0682] 저장 완료, 처리=2.14초, 대기=55.60초
+[6830.57] WORKER1 | PROC | SUCCESS | KV[0683] 저장 완료, 처리=1.99초, 대기=56.74초
+[6832.89] WORKER1 | PROC | FAIL | KV[0684] 처리 실패, 20% 규칙
+[6833.89] WORKER1 | RECV | INFO | KV[0684] 우선 재시도 작업 수신, 대기열=1/10
+[6836.15] WORKER1 | PROC | SUCCESS | KV[0685] 저장 완료, 처리=1.26초, 대기=55.74초
+[6839.96] WORKER1 | PROC | SUCCESS | KV[0686] 저장 완료, 처리=2.81초, 대기=56.00초
+[6842.42] WORKER1 | PROC | SUCCESS | KV[0687] 저장 완료, 처리=1.46초, 대기=57.82초
+[6845.38] WORKER1 | PROC | SUCCESS | KV[0688] 저장 완료, 처리=1.96초, 대기=58.28초
+[6849.07] WORKER1 | RECV | INFO | KV[0356] 우선 재시도 작업 수신, 대기열=1/10
+[7049.36] WORKER1 | PROC | FAIL | KV[0689] 처리 실패, 20% 규칙
+[7053.10] WORKER1 | PROC | SUCCESS | KV[0690] 저장 완료, 처리=1.74초, 대기=59.58초
+[7059.39] WORKER1 | PROC | SUCCESS | KV[0691] 저장 완료, 처리=1.70초, 대기=60.31초
+[7065.35] WORKER1 | PROC | SUCCESS | KV[0692] 저장 완료, 처리=1.77초, 대기=61.02초
+[7071.51] WORKER1 | PROC | SUCCESS | KV[0693] 저장 완료, 처리=2.54초, 대기=61.79초
+[7079.30] WORKER1 | PROC | SUCCESS | KV[0694] 저장 완료, 처리=2.30초, 대기=63.33초
+[7085.26] WORKER1 | PROC | SUCCESS | KV[0695] 저장 완료, 처리=1.65초, 대기=64.63초
+[7096.96] WORKER1 | PROC | SUCCESS | KV[0696] 저장 완료, 처리=1.45초, 대기=65.28초
+[7128.48] WORKER1 | RECV | INFO | KV[0728] 우선 재시도 작업 수신, 대기열=1/10
+[7167.83] WORKER1 | PROC | SUCCESS | KV[0697] 저장 완료, 처리=1.80초, 대기=65.73초
+[7169.97] WORKER1 | PROC | SUCCESS | KV[0698] 저장 완료, 처리=1.14초, 대기=66.54초
+[7172.45] WORKER1 | PROC | SUCCESS | KV[0699] 저장 완료, 처리=1.48초, 대기=66.68초
+[7175.37] WORKER1 | PROC | SUCCESS | KV[0700] 저장 완료, 처리=1.92초, 대기=67.16초
+[7178.47] WORKER1 | PROC | SUCCESS | KV[0701] 저장 완료, 처리=2.10초, 대기=68.08초
+[7180.75] WORKER1 | PROC | SUCCESS | KV[0702] 저장 완료, 처리=1.28초, 대기=69.18초
+[7182.93] WORKER1 | PROC | SUCCESS | KV[0703] 저장 완료, 처리=1.18초, 대기=69.45초
+[7185.93] WORKER1 | PROC | SUCCESS | KV[0974] 저장 완료, 처리=2.00초, 대기=0.00초
+[7188.99] WORKER1 | PROC | SUCCESS | KV[0975] 저장 완료, 처리=2.06초, 대기=1.00초
+[7192.33] WORKER1 | PROC | SUCCESS | KV[0976] 저장 완료, 처리=2.34초, 대기=2.06초
+[7195.52] WORKER1 | PROC | SUCCESS | KV[0977] 저장 완료, 처리=2.19초, 대기=3.40초
+[7197.57] WORKER1 | PROC | SUCCESS | KV[0978] 저장 완료, 처리=1.05초, 대기=4.59초
+[7226.00] WORKER1 | RECV | INFO | KV[0398] 우선 재시도 작업 수신, 대기열=1/10
+[7278.83] WORKER1 | PROC | SUCCESS | KV[0979] 저장 완료, 처리=1.45초, 대기=4.64초
+[7282.60] WORKER1 | PROC | SUCCESS | KV[0980] 저장 완료, 처리=2.77초, 대기=5.09초
+[7285.66] WORKER1 | PROC | FAIL | KV[0981] 처리 실패, 20% 규칙
+[7286.66] WORKER1 | RECV | INFO | KV[0981] 우선 재시도 작업 수신, 대기열=1/10
+[7290.30] WORKER1 | PROC | SUCCESS | KV[0982] 저장 완료, 처리=2.64초, 대기=7.92초
+[7293.38] WORKER1 | PROC | FAIL | KV[0983] 처리 실패, 20% 규칙
+[7297.49] WORKER1 | PROC | SUCCESS | KV[0984] 저장 완료, 처리=2.11초, 대기=8.21초
+[7301.04] WORKER1 | PROC | FAIL | KV[0985] 처리 실패, 20% 규칙
+[7305.82] WORKER1 | PROC | SUCCESS | KV[0986] 저장 완료, 처리=2.78초, 대기=10.87초
+[7309.56] WORKER1 | PROC | FAIL | KV[0987] 처리 실패, 20% 규칙
+[7310.56] WORKER1 | RECV | INFO | KV[0987] 우선 재시도 작업 수신, 대기열=1/10
+[7312.64] WORKER1 | PROC | SUCCESS | KV[0988] 저장 완료, 처리=1.08초, 대기=14.38초
+[7316.54] WORKER1 | PROC | SUCCESS | KV[0989] 저장 완료, 처리=2.90초, 대기=14.47초
+[7318.87] WORKER1 | PROC | SUCCESS | KV[0990] 저장 완료, 처리=1.33초, 대기=16.37초
+[7321.14] WORKER1 | PROC | SUCCESS | KV[0991] 저장 완료, 처리=1.27초, 대기=16.69초
+[7323.16] WORKER1 | PROC | SUCCESS | KV[0992] 저장 완료, 처리=1.02초, 대기=16.96초
+[7326.44] WORKER1 | PROC | FAIL | KV[0993] 처리 실패, 20% 규칙
+[7327.44] WORKER1 | RECV | INFO | KV[0993] 우선 재시도 작업 수신, 대기열=1/10
+[7330.75] WORKER1 | PROC | SUCCESS | KV[0994] 저장 완료, 처리=2.31초, 대기=18.26초
+[7333.04] WORKER1 | PROC | SUCCESS | KV[0995] 저장 완료, 처리=1.29초, 대기=19.57초
+[7336.78] WORKER1 | PROC | SUCCESS | KV[0996] 저장 완료, 처리=2.74초, 대기=19.86초
+[7339.25] WORKER1 | PROC | SUCCESS | KV[0997] 저장 완료, 처리=1.47초, 대기=21.60초
+[7341.57] WORKER1 | PROC | SUCCESS | KV[0998] 저장 완료, 처리=1.32초, 대기=22.07초
+[7345.24] WORKER1 | PROC | SUCCESS | KV[0999] 저장 완료, 처리=2.67초, 대기=22.38초
+[7348.40] WORKER1 | PROC | SUCCESS | KV[1000] 저장 완료, 처리=2.16초, 대기=24.05초
+[7352.22] WORKER1 | PROC | SUCCESS | KV[1001] 저장 완료, 처리=2.82초, 대기=25.22초
+[7354.22] WORKER1 | PROC | SUCCESS | KV[1002] 저장 완료, 처리=1.00초, 대기=27.04초
+[7356.54] WORKER1 | PROC | SUCCESS | KV[1003] 저장 완료, 처리=1.32초, 대기=27.04초
+[7359.11] WORKER1 | PROC | SUCCESS | KV[1004] 저장 완료, 처리=1.57초, 대기=27.36초
+[7361.46] WORKER1 | PROC | FAIL | KV[1005] 처리 실패, 20% 규칙
+[7362.46] WORKER1 | RECV | INFO | KV[1005] 우선 재시도 작업 수신, 대기열=1/10
+[7365.54] WORKER1 | PROC | SUCCESS | KV[1006] 저장 완료, 처리=2.08초, 대기=28.28초
+[7368.01] WORKER1 | PROC | FAIL | KV[1007] 처리 실패, 20% 규칙
+[7369.01] WORKER1 | RECV | INFO | KV[1007] 우선 재시도 작업 수신, 대기열=1/10
+[7372.99] WORKER1 | PROC | FAIL | KV[1008] 처리 실패, 20% 규칙
+[7373.99] WORKER1 | RECV | INFO | KV[1008] 우선 재시도 작업 수신, 대기열=1/10
+[7376.67] WORKER1 | PROC | SUCCESS | KV[1009] 저장 완료, 처리=1.68초, 대기=31.81초
+[7379.88] WORKER1 | PROC | FAIL | KV[1010] 처리 실패, 20% 규칙
+[7380.88] WORKER1 | RECV | INFO | KV[1010] 우선 재시도 작업 수신, 대기열=1/10
+[7383.23] WORKER1 | PROC | SUCCESS | KV[1011] 저장 완료, 처리=1.35초, 대기=33.69초
+[7386.41] WORKER1 | PROC | FAIL | KV[1012] 처리 실패, 20% 규칙
+[7387.41] WORKER1 | RECV | INFO | KV[1012] 우선 재시도 작업 수신, 대기열=1/10
+[7391.25] WORKER1 | PROC | SUCCESS | KV[1013] 저장 완료, 처리=2.84초, 대기=31.48초
+[7393.95] WORKER1 | PROC | SUCCESS | KV[1014] 저장 완료, 처리=1.70초, 대기=33.32초
+[7417.53] WORKER1 | RECV | INFO | KV[0746] 우선 재시도 작업 수신, 대기열=1/10
+[7669.46] WORKER1 | PROC | SUCCESS | KV[1015] 저장 완료, 처리=1.07초, 대기=34.02초
+[7672.14] WORKER1 | PROC | SUCCESS | KV[1016] 저장 완료, 처리=1.68초, 대기=34.08초
+[7675.74] WORKER1 | PROC | SUCCESS | KV[1017] 저장 완료, 처리=2.60초, 대기=34.76초
+[7679.28] WORKER1 | PROC | SUCCESS | KV[1018] 저장 완료, 처리=2.54초, 대기=36.36초
+[7682.29] WORKER1 | PROC | SUCCESS | KV[1019] 저장 완료, 처리=2.01초, 대기=37.90초
+[7684.34] WORKER1 | PROC | SUCCESS | KV[1020] 저장 완료, 처리=1.05초, 대기=38.91초
+[7687.47] WORKER1 | PROC | FAIL | KV[1021] 처리 실패, 20% 규칙
+[7692.35] WORKER1 | PROC | FAIL | KV[1022] 처리 실패, 20% 규칙
+[7693.35] WORKER1 | RECV | INFO | KV[1022] 우선 재시도 작업 수신, 대기열=1/10
+[7696.94] WORKER1 | PROC | SUCCESS | KV[1023] 저장 완료, 처리=2.59초, 대기=41.97초
+[7699.45] WORKER1 | PROC | FAIL | KV[1024] 처리 실패, 20% 규칙
+[7700.45] WORKER1 | RECV | INFO | KV[1024] 우선 재시도 작업 수신, 대기열=1/10
+[7704.35] WORKER1 | PROC | FAIL | KV[1025] 처리 실패, 20% 규칙
+[7705.35] WORKER1 | RECV | INFO | KV[1025] 우선 재시도 작업 수신, 대기열=1/10
+[7708.29] WORKER1 | PROC | SUCCESS | KV[1026] 저장 완료, 처리=1.94초, 대기=45.98초
+[7711.42] WORKER1 | PROC | SUCCESS | KV[1027] 저장 완료, 처리=2.13초, 대기=46.92초
+[7714.90] WORKER1 | PROC | SUCCESS | KV[1028] 저장 완료, 처리=2.48초, 대기=48.05초
+[7718.37] WORKER1 | PROC | SUCCESS | KV[1029] 저장 완료, 처리=2.47초, 대기=49.54초
+[7722.28] WORKER1 | PROC | FAIL | KV[1030] 처리 실패, 20% 규칙
+[7723.28] WORKER1 | RECV | INFO | KV[1030] 우선 재시도 작업 수신, 대기열=1/10
+[7727.09] WORKER1 | PROC | SUCCESS | KV[1031] 저장 완료, 처리=2.81초, 대기=52.92초
+[7730.01] WORKER1 | PROC | SUCCESS | KV[1032] 저장 완료, 처리=1.92초, 대기=54.73초
+[7733.19] WORKER1 | PROC | SUCCESS | KV[1033] 저장 완료, 처리=2.18초, 대기=55.64초
+[7736.56] WORKER1 | PROC | SUCCESS | KV[1034] 저장 완료, 처리=2.37초, 대기=56.82초
+[7739.90] WORKER1 | PROC | SUCCESS | KV[1035] 저장 완료, 처리=2.34초, 대기=58.19초
+[7743.33] WORKER1 | PROC | SUCCESS | KV[1036] 저장 완료, 처리=2.43초, 대기=59.53초
+[7746.87] WORKER1 | PROC | SUCCESS | KV[1037] 저장 완료, 처리=2.54초, 대기=60.95초
+[7748.99] WORKER1 | PROC | SUCCESS | KV[1038] 저장 완료, 처리=1.12초, 대기=62.49초
+[7751.28] WORKER1 | PROC | SUCCESS | KV[1039] 저장 완료, 처리=1.29초, 대기=62.62초
+[7753.53] WORKER1 | PROC | SUCCESS | KV[1040] 저장 완료, 처리=1.25초, 대기=62.91초
+[7756.80] WORKER1 | PROC | SUCCESS | KV[1041] 저장 완료, 처리=2.27초, 대기=60.79초
+[7844.28] WORKER1 | PROC | SUCCESS | KV[1042] 저장 완료, 처리=2.76초, 대기=62.06초
+[7846.36] WORKER1 | PROC | FAIL | KV[1043] 처리 실패, 20% 규칙
+[7847.36] WORKER1 | RECV | INFO | KV[1043] 우선 재시도 작업 수신, 대기열=1/10
+[7850.56] WORKER1 | PROC | SUCCESS | KV[1044] 저장 완료, 처리=2.20초, 대기=63.89초
+[7853.85] WORKER1 | PROC | SUCCESS | KV[1045] 저장 완료, 처리=2.29초, 대기=65.09초
+[7856.52] WORKER1 | PROC | FAIL | KV[1046] 처리 실패, 20% 규칙
+[7857.52] WORKER1 | RECV | INFO | KV[1046] 우선 재시도 작업 수신, 대기열=1/10
+[7861.30] WORKER1 | PROC | SUCCESS | KV[1047] 저장 완료, 처리=2.78초, 대기=67.06초
+[7864.87] WORKER1 | PROC | SUCCESS | KV[1048] 저장 완료, 처리=2.57초, 대기=68.84초
+[7868.14] WORKER1 | PROC | SUCCESS | KV[1049] 저장 완료, 처리=2.27초, 대기=70.41초
+[7871.90] WORKER1 | PROC | FAIL | KV[1050] 처리 실패, 20% 규칙
+[7875.28] WORKER1 | PROC | FAIL | KV[1051] 처리 실패, 20% 규칙
+[7876.28] WORKER1 | RECV | INFO | KV[1051] 우선 재시도 작업 수신, 대기열=1/10
+[7879.01] WORKER1 | PROC | SUCCESS | KV[1052] 저장 완료, 처리=1.73초, 대기=73.83초
+[7882.25] WORKER1 | PROC | SUCCESS | KV[1053] 저장 완료, 처리=2.24초, 대기=74.56초
+[7886.13] WORKER1 | PROC | SUCCESS | KV[1054] 저장 완료, 처리=2.88초, 대기=75.80초
+[7889.57] WORKER1 | PROC | SUCCESS | KV[1055] 저장 완료, 처리=2.44초, 대기=77.68초
+[7892.54] WORKER1 | PROC | SUCCESS | KV[1056] 저장 완료, 처리=1.97초, 대기=79.13초
+[7896.06] WORKER1 | PROC | FAIL | KV[1057] 처리 실패, 20% 규칙
+[7897.06] WORKER1 | RECV | INFO | KV[1057] 우선 재시도 작업 수신, 대기열=1/10
+[7900.00] WORKER1 | PROC | FAIL | KV[1058] 처리 실패, 20% 규칙
+[7901.00] WORKER1 | RECV | INFO | KV[1058] 우선 재시도 작업 수신, 대기열=1/10
+[7904.63] WORKER1 | PROC | SUCCESS | KV[1059] 저장 완료, 처리=2.63초, 대기=82.56초
+[7907.47] WORKER1 | PROC | SUCCESS | KV[1060] 저장 완료, 처리=1.84초, 대기=84.20초
+[7910.61] WORKER1 | PROC | SUCCESS | KV[1061] 저장 완료, 처리=2.14초, 대기=85.04초
+[7913.37] WORKER1 | PROC | SUCCESS | KV[1062] 저장 완료, 처리=1.76초, 대기=86.17초
+[7917.36] WORKER1 | PROC | SUCCESS | KV[1063] 저장 완료, 처리=2.99초, 대기=86.93초
+[7919.65] WORKER1 | PROC | SUCCESS | KV[1064] 저장 완료, 처리=1.29초, 대기=88.93초
+[7923.42] WORKER1 | PROC | FAIL | KV[1065] 처리 실패, 20% 규칙
+[7924.42] WORKER1 | RECV | INFO | KV[1065] 우선 재시도 작업 수신, 대기열=1/10
+[7927.73] WORKER1 | PROC | FAIL | KV[1066] 처리 실패, 20% 규칙
+[7928.73] WORKER1 | RECV | INFO | KV[1066] 우선 재시도 작업 수신, 대기열=1/10
+[7931.89] WORKER1 | PROC | FAIL | KV[1067] 처리 실패, 20% 규칙
+[7932.89] WORKER1 | RECV | INFO | KV[1067] 우선 재시도 작업 수신, 대기열=1/10
+[7936.57] WORKER1 | PROC | SUCCESS | KV[1068] 저장 완료, 처리=2.68초, 대기=93.45초
+[7940.26] WORKER1 | PROC | SUCCESS | KV[1069] 저장 완료, 처리=2.69초, 대기=95.13초
+[7943.89] WORKER1 | RECV | INFO | KV[0873] 우선 재시도 작업 수신, 대기열=1/10
+[8106.39] WORKER1 | PROC | SUCCESS | KV[0029] 저장 완료, 처리=1.84초, 대기=94.55초
+[8110.07] WORKER1 | PROC | SUCCESS | KV[1070] 저장 완료, 처리=2.68초, 대기=95.39초
+[8113.68] WORKER1 | PROC | SUCCESS | KV[1071] 저장 완료, 처리=2.61초, 대기=97.07초
+[8115.73] WORKER1 | PROC | SUCCESS | KV[1072] 저장 완료, 처리=1.05초, 대기=98.68초
+[8118.80] WORKER1 | PROC | SUCCESS | KV[1073] 저장 완료, 처리=2.07초, 대기=98.73초
+[8121.14] WORKER1 | PROC | SUCCESS | KV[1074] 저장 완료, 처리=1.34초, 대기=99.80초
+[8125.14] WORKER1 | PROC | SUCCESS | KV[1075] 저장 완료, 처리=3.00초, 대기=100.14초
+[8128.34] WORKER1 | PROC | SUCCESS | KV[1076] 저장 완료, 처리=2.20초, 대기=102.14초
+[8132.27] WORKER1 | PROC | SUCCESS | KV[1077] 저장 완료, 처리=2.93초, 대기=103.34초
+[8134.78] WORKER1 | PROC | SUCCESS | KV[1078] 저장 완료, 처리=1.51초, 대기=105.27초
+[8137.35] WORKER1 | PROC | SUCCESS | KV[1079] 저장 완료, 처리=1.57초, 대기=105.78초
+[8139.67] WORKER1 | PROC | SUCCESS | KV[1080] 저장 완료, 처리=1.32초, 대기=106.35초
+[8141.94] WORKER1 | PROC | SUCCESS | KV[1081] 저장 완료, 처리=1.27초, 대기=106.67초
+[8145.48] WORKER1 | PROC | SUCCESS | KV[1082] 저장 완료, 처리=2.54초, 대기=106.94초
+[8148.06] WORKER1 | PROC | FAIL | KV[1083] 처리 실패, 20% 규칙
+[8151.22] WORKER1 | PROC | SUCCESS | KV[1084] 저장 완료, 처리=1.16초, 대기=109.06초
+[8155.14] WORKER1 | PROC | SUCCESS | KV[1085] 저장 완료, 처리=2.92초, 대기=109.22초
+[8157.60] WORKER1 | PROC | SUCCESS | KV[1086] 저장 완료, 처리=1.46초, 대기=111.14초
+[8160.03] WORKER1 | PROC | FAIL | KV[1087] 처리 실패, 20% 규칙
+[8161.03] WORKER1 | RECV | INFO | KV[1087] 우선 재시도 작업 수신, 대기열=1/10
+[8165.02] WORKER1 | PROC | SUCCESS | KV[1088] 저장 완료, 처리=2.99초, 대기=112.03초
+[8167.87] WORKER1 | PROC | SUCCESS | KV[1089] 저장 완료, 처리=1.85초, 대기=114.02초
+[8171.35] WORKER1 | PROC | SUCCESS | KV[1090] 저장 완료, 처리=2.48초, 대기=114.87초
+[8173.76] WORKER1 | PROC | FAIL | KV[1091] 처리 실패, 20% 규칙
+[8174.76] WORKER1 | RECV | INFO | KV[1091] 우선 재시도 작업 수신, 대기열=1/10
+[8177.94] WORKER1 | PROC | SUCCESS | KV[1092] 저장 완료, 처리=2.18초, 대기=116.76초
+[8181.45] WORKER1 | PROC | SUCCESS | KV[1093] 저장 완료, 처리=2.51초, 대기=117.94초
+[8184.16] WORKER1 | PROC | SUCCESS | KV[1094] 저장 완료, 처리=1.71초, 대기=119.45초
+[8187.25] WORKER1 | PROC | SUCCESS | KV[1095] 저장 완료, 처리=2.09초, 대기=120.16초
+[8247.44] WORKER1 | RECV | INFO | KV[0812] 우선 재시도 작업 수신, 대기열=1/10
+[8461.15] WORKER1 | PROC | FAIL | KV[1096] 처리 실패, 20% 규칙
+[8462.15] WORKER1 | RECV | INFO | KV[1096] 우선 재시도 작업 수신, 대기열=1/10
+[8465.21] WORKER1 | PROC | SUCCESS | KV[1097] 저장 완료, 처리=2.06초, 대기=122.64초
+[8467.87] WORKER1 | PROC | SUCCESS | KV[1098] 저장 완료, 처리=1.66초, 대기=123.69초
+[8470.13] WORKER1 | PROC | FAIL | KV[1099] 처리 실패, 20% 규칙
+[8471.13] WORKER1 | RECV | INFO | KV[1099] 우선 재시도 작업 수신, 대기열=1/10
+[8473.53] WORKER1 | PROC | SUCCESS | KV[1100] 저장 완료, 처리=1.40초, 대기=124.62초
+[8476.46] WORKER1 | PROC | SUCCESS | KV[1101] 저장 완료, 처리=1.93초, 대기=125.02초
+[8478.67] WORKER1 | PROC | SUCCESS | KV[1102] 저장 완료, 처리=1.21초, 대기=125.95초
+[8481.69] WORKER1 | PROC | SUCCESS | KV[1103] 저장 완료, 처리=2.02초, 대기=126.16초
+[8483.73] WORKER1 | PROC | SUCCESS | KV[1104] 저장 완료, 처리=1.04초, 대기=127.18초
+[8486.25] WORKER1 | PROC | SUCCESS | KV[1105] 저장 완료, 처리=1.52초, 대기=127.21초
+[8488.35] WORKER1 | PROC | SUCCESS | KV[1106] 저장 완료, 처리=1.10초, 대기=127.73초
+[8492.00] WORKER1 | PROC | SUCCESS | KV[1107] 저장 완료, 처리=2.65초, 대기=124.81초
+[8495.99] WORKER1 | PROC | SUCCESS | KV[1108] 저장 완료, 처리=2.99초, 대기=126.46초
+[8498.24] WORKER1 | PROC | SUCCESS | KV[1109] 저장 완료, 처리=1.25초, 대기=128.45초
+[8500.56] WORKER1 | PROC | SUCCESS | KV[1110] 저장 완료, 처리=1.32초, 대기=128.69초
+[8504.45] WORKER1 | PROC | SUCCESS | KV[1111] 저장 완료, 처리=2.89초, 대기=129.01초
+[8508.29] WORKER1 | PROC | SUCCESS | KV[1112] 저장 완료, 처리=2.84초, 대기=130.90초
+[8511.29] WORKER1 | PROC | SUCCESS | KV[1113] 저장 완료, 처리=2.00초, 대기=132.74초
+[8513.58] WORKER1 | PROC | SUCCESS | KV[1114] 저장 완료, 처리=1.29초, 대기=133.74초
+[8517.08] WORKER1 | PROC | SUCCESS | KV[1115] 저장 완료, 처리=2.50초, 대기=134.02초
+[8520.42] WORKER1 | PROC | SUCCESS | KV[1116] 저장 완료, 처리=2.34초, 대기=135.52초
+[8522.59] WORKER1 | PROC | SUCCESS | KV[1117] 저장 완료, 처리=1.17초, 대기=136.86초
+[8525.84] WORKER1 | PROC | SUCCESS | KV[1118] 저장 완료, 처리=2.25초, 대기=137.03초
+[8528.75] WORKER1 | PROC | FAIL | KV[1119] 처리 실패, 20% 규칙
+[8533.69] WORKER1 | PROC | SUCCESS | KV[1120] 저장 완료, 처리=2.94초, 대기=139.19초
+[8535.94] WORKER1 | PROC | SUCCESS | KV[1121] 저장 완료, 처리=1.25초, 대기=141.13초
+[8538.02] WORKER1 | PROC | SUCCESS | KV[1122] 저장 완료, 처리=1.08초, 대기=141.38초
+[8542.55] WORKER1 | RECV | INFO | KV[1225] 우선 재시도 작업 수신, 대기열=1/10
+[8896.16] WORKER1 | PROC | SUCCESS | KV[1123] 저장 완료, 처리=2.47초, 대기=141.46초
+[8898.51] WORKER1 | PROC | SUCCESS | KV[1124] 저장 완료, 처리=1.35초, 대기=142.92초
+[8901.21] WORKER1 | PROC | FAIL | KV[1125] 처리 실패, 20% 규칙
+[8904.91] WORKER1 | PROC | FAIL | KV[1126] 처리 실패, 20% 규칙
+[8905.91] WORKER1 | RECV | INFO | KV[1126] 우선 재시도 작업 수신, 대기열=1/10
+[8908.74] WORKER1 | PROC | SUCCESS | KV[1127] 저장 완료, 처리=1.83초, 대기=141.94초
+[8911.58] WORKER1 | PROC | SUCCESS | KV[1128] 저장 완료, 처리=1.84초, 대기=142.78초
+[8915.12] WORKER1 | PROC | SUCCESS | KV[1129] 저장 완료, 처리=2.54초, 대기=143.61초
+[8917.85] WORKER1 | PROC | SUCCESS | KV[1130] 저장 완료, 처리=1.73초, 대기=145.15초
+[8920.91] WORKER1 | PROC | SUCCESS | KV[1131] 저장 완료, 처리=2.06초, 대기=145.88초
+[8922.97] WORKER1 | PROC | SUCCESS | KV[1132] 저장 완료, 처리=1.06초, 대기=146.94초
+[8926.70] WORKER1 | PROC | FAIL | KV[1133] 처리 실패, 20% 규칙
+[8927.70] WORKER1 | RECV | INFO | KV[1133] 우선 재시도 작업 수신, 대기열=1/10
+[8931.23] WORKER1 | PROC | SUCCESS | KV[1134] 저장 완료, 처리=2.53초, 대기=148.73초
+[8933.94] WORKER1 | PROC | SUCCESS | KV[1135] 저장 완료, 처리=1.71초, 대기=150.26초
+[8937.22] WORKER1 | PROC | SUCCESS | KV[1136] 저장 완료, 처리=2.28초, 대기=150.97초
+[8939.79] WORKER1 | PROC | SUCCESS | KV[1137] 저장 완료, 처리=1.57초, 대기=152.25초
+[8943.33] WORKER1 | PROC | FAIL | KV[1138] 처리 실패, 20% 규칙
+[8944.33] WORKER1 | RECV | INFO | KV[1138] 우선 재시도 작업 수신, 대기열=1/10
+[8947.73] WORKER1 | PROC | SUCCESS | KV[1139] 저장 완료, 처리=2.40초, 대기=154.36초
+[8950.99] WORKER1 | PROC | SUCCESS | KV[1140] 저장 완료, 처리=2.26초, 대기=155.76초
+[8953.35] WORKER1 | PROC | SUCCESS | KV[1141] 저장 완료, 처리=1.36초, 대기=157.02초
+[8956.87] WORKER1 | PROC | SUCCESS | KV[1142] 저장 완료, 처리=2.52초, 대기=157.38초
+[8959.25] WORKER1 | PROC | SUCCESS | KV[1143] 저장 완료, 처리=1.38초, 대기=158.89초
+[8961.62] WORKER1 | PROC | FAIL | KV[1144] 처리 실패, 20% 규칙
+[8966.40] WORKER1 | PROC | FAIL | KV[1145] 처리 실패, 20% 규칙
+[8967.40] WORKER1 | RECV | INFO | KV[1145] 우선 재시도 작업 수신, 대기열=1/10
+[8970.40] WORKER1 | PROC | SUCCESS | KV[1146] 저장 완료, 처리=2.00초, 대기=161.42초
+[8972.52] WORKER1 | PROC | SUCCESS | KV[1147] 저장 완료, 처리=1.12초, 대기=162.42초
+[8974.76] WORKER1 | PROC | SUCCESS | KV[1148] 저장 완료, 처리=1.24초, 대기=162.54초
+[8978.59] WORKER1 | PROC | SUCCESS | KV[1149] 저장 완료, 처리=2.83초, 대기=162.79초
+[8981.28] WORKER1 | PROC | SUCCESS | KV[1150] 저장 완료, 처리=1.69초, 대기=164.62초
+[8985.12] WORKER1 | PROC | SUCCESS | KV[1151] 저장 완료, 처리=2.84초, 대기=165.31초
+[8987.18] WORKER1 | PROC | FAIL | KV[1152] 처리 실패, 20% 규칙
+[8988.18] WORKER1 | RECV | INFO | KV[1152] 우선 재시도 작업 수신, 대기열=1/10
+[8992.18] WORKER1 | PROC | SUCCESS | KV[1153] 저장 완료, 처리=3.00초, 대기=167.21초
+[8994.42] WORKER1 | PROC | FAIL | KV[1154] 처리 실패, 20% 규칙
+[8995.42] WORKER1 | RECV | INFO | KV[1154] 우선 재시도 작업 수신, 대기열=1/10
+[8998.59] WORKER1 | PROC | SUCCESS | KV[1155] 저장 완료, 처리=2.17초, 대기=169.44초
+[9010.35] WORKER1 | RECV | INFO | KV[1158] 우선 재시도 작업 수신, 대기열=1/10
+[9095.93] WORKER1 | PROC | SUCCESS | KV[1580] 저장 완료, 처리=1.03초, 대기=0.00초
+[9099.83] WORKER1 | PROC | SUCCESS | KV[1581] 저장 완료, 처리=2.90초, 대기=0.03초
+[9103.40] WORKER1 | PROC | FAIL | KV[1582] 처리 실패, 20% 규칙
+[9107.97] WORKER1 | PROC | SUCCESS | KV[1583] 저장 완료, 처리=2.57초, 대기=3.50초
+[9111.61] WORKER1 | PROC | SUCCESS | KV[1584] 저장 완료, 처리=2.64초, 대기=5.07초
+[9114.32] WORKER1 | PROC | SUCCESS | KV[1585] 저장 완료, 처리=1.71초, 대기=6.71초
+[9116.93] WORKER1 | PROC | SUCCESS | KV[1586] 저장 완료, 처리=1.61초, 대기=7.42초
+[9118.97] WORKER1 | PROC | SUCCESS | KV[1587] 저장 완료, 처리=1.04초, 대기=8.03초
+[9221.97] WORKER1 | PROC | SUCCESS | KV[1588] 저장 완료, 처리=1.57초, 대기=8.08초
+[9225.83] WORKER1 | PROC | FAIL | KV[1589] 처리 실패, 20% 규칙
+[9226.83] WORKER1 | RECV | INFO | KV[1589] 우선 재시도 작업 수신, 대기열=1/10
+[9230.13] WORKER1 | PROC | SUCCESS | KV[3499] 저장 완료, 처리=2.30초, 대기=0.00초
+[9232.75] WORKER1 | PROC | SUCCESS | KV[3500] 저장 완료, 처리=1.62초, 대기=1.30초
+[10328.10] WORKER1 | PROC | SUCCESS | KV[3501] 저장 완료, 처리=1.95초, 대기=1.91초
+[10331.16] WORKER1 | PROC | FAIL | KV[3502] 처리 실패, 20% 규칙
+[10332.16] WORKER1 | RECV | INFO | KV[3502] 우선 재시도 작업 수신, 대기열=1/10
+[10335.28] WORKER1 | PROC | FAIL | KV[3503] 처리 실패, 20% 규칙
+[10336.28] WORKER1 | RECV | INFO | KV[3503] 우선 재시도 작업 수신, 대기열=1/10
+[10339.62] WORKER1 | PROC | SUCCESS | KV[3504] 저장 완료, 처리=2.34초, 대기=5.05초
+[10342.03] WORKER1 | PROC | FAIL | KV[3505] 처리 실패, 20% 규칙
+[10345.24] WORKER1 | PROC | SUCCESS | KV[3506] 저장 완료, 처리=1.21초, 대기=6.81초
+[10347.50] WORKER1 | PROC | SUCCESS | KV[3507] 저장 완료, 처리=1.26초, 대기=7.02초
+[10350.44] WORKER1 | PROC | SUCCESS | KV[3508] 저장 완료, 처리=1.94초, 대기=7.27초
+[10352.89] WORKER1 | PROC | SUCCESS | KV[3509] 저장 완료, 처리=1.45초, 대기=8.21초
+[10356.25] WORKER1 | PROC | SUCCESS | KV[3510] 저장 완료, 처리=2.36초, 대기=8.66초
+[10359.39] WORKER1 | PROC | SUCCESS | KV[3511] 저장 완료, 처리=2.14초, 대기=10.02초
+[10363.31] WORKER1 | PROC | SUCCESS | KV[3512] 저장 완료, 처리=2.92초, 대기=11.16초
+[10365.56] WORKER1 | PROC | SUCCESS | KV[3513] 저장 완료, 처리=1.25초, 대기=13.08초
+[10369.54] WORKER1 | PROC | SUCCESS | KV[3514] 저장 완료, 처리=2.98초, 대기=13.33초
+[10371.64] WORKER1 | PROC | SUCCESS | KV[3515] 저장 완료, 처리=1.10초, 대기=15.31초
+[10375.12] WORKER1 | PROC | SUCCESS | KV[3516] 저장 완료, 처리=2.48초, 대기=15.41초
+[10378.59] WORKER1 | PROC | SUCCESS | KV[3517] 저장 완료, 처리=2.47초, 대기=16.89초
+[10382.51] WORKER1 | PROC | SUCCESS | KV[3518] 저장 완료, 처리=2.92초, 대기=16.21초
+[10385.39] WORKER1 | PROC | FAIL | KV[3519] 처리 실패, 20% 규칙
+[10386.39] WORKER1 | RECV | INFO | KV[3519] 우선 재시도 작업 수신, 대기열=1/10
+[10390.19] WORKER1 | PROC | SUCCESS | KV[3520] 저장 완료, 처리=2.80초, 대기=19.01초
+[10393.27] WORKER1 | PROC | SUCCESS | KV[3521] 저장 완료, 처리=2.08초, 대기=20.81초
+[10396.32] WORKER1 | PROC | SUCCESS | KV[3522] 저장 완료, 처리=2.05초, 대기=21.89초
+[10398.40] WORKER1 | PROC | SUCCESS | KV[3523] 저장 완료, 처리=1.08초, 대기=22.94초
+[10401.43] WORKER1 | PROC | SUCCESS | KV[3524] 저장 완료, 처리=2.03초, 대기=23.01초
+[10403.45] WORKER1 | PROC | SUCCESS | KV[3525] 저장 완료, 처리=1.02초, 대기=24.04초
+[10405.75] WORKER1 | PROC | SUCCESS | KV[3526] 저장 완료, 처리=1.30초, 대기=24.06초
+[10408.26] WORKER1 | PROC | SUCCESS | KV[3527] 저장 완료, 처리=1.51초, 대기=24.36초
+[10411.35] WORKER1 | PROC | SUCCESS | KV[3528] 저장 완료, 처리=2.09초, 대기=24.87초
+[10414.47] WORKER1 | PROC | SUCCESS | KV[3529] 저장 완료, 처리=2.12초, 대기=25.96초
+[10416.88] WORKER1 | PROC | SUCCESS | KV[3530] 저장 완료, 처리=1.41초, 대기=27.08초
+[10419.48] WORKER1 | PROC | SUCCESS | KV[3531] 저장 완료, 처리=1.60초, 대기=27.48초
+[10423.38] WORKER1 | PROC | SUCCESS | KV[3532] 저장 완료, 처리=2.90초, 대기=28.09초
+[10426.80] WORKER1 | PROC | SUCCESS | KV[3533] 저장 완료, 처리=2.42초, 대기=29.99초
+[10429.04] WORKER1 | PROC | SUCCESS | KV[3534] 저장 완료, 처리=1.24초, 대기=31.40초
+[10432.60] WORKER1 | PROC | SUCCESS | KV[3535] 저장 완료, 처리=2.56초, 대기=31.64초
+[10436.00] WORKER1 | PROC | SUCCESS | KV[3536] 저장 완료, 처리=2.40초, 대기=33.20초
+[10438.15] WORKER1 | PROC | SUCCESS | KV[3537] 저장 완료, 처리=1.15초, 대기=34.60초
+[10441.36] WORKER1 | PROC | FAIL | KV[3538] 처리 실패, 20% 규칙
+[10442.36] WORKER1 | RECV | INFO | KV[3538] 우선 재시도 작업 수신, 대기열=1/10
+[10445.60] WORKER1 | PROC | SUCCESS | KV[3539] 저장 완료, 처리=2.24초, 대기=35.97초
+[10447.80] WORKER1 | PROC | SUCCESS | KV[3540] 저장 완료, 처리=1.20초, 대기=37.21초
+[10450.90] WORKER1 | PROC | SUCCESS | KV[3541] 저장 완료, 처리=2.10초, 대기=37.41초
+[10453.28] WORKER1 | PROC | SUCCESS | KV[3542] 저장 완료, 처리=1.38초, 대기=38.51초
+[10456.43] WORKER1 | PROC | FAIL | KV[3543] 처리 실패, 20% 규칙
+[10457.43] WORKER1 | RECV | INFO | KV[3543] 우선 재시도 작업 수신, 대기열=1/10
+[10460.54] WORKER1 | PROC | SUCCESS | KV[3544] 저장 완료, 처리=2.11초, 대기=40.04초
+[10463.39] WORKER1 | PROC | SUCCESS | KV[3545] 저장 완료, 처리=1.85초, 대기=41.15초
+[10465.45] WORKER1 | PROC | FAIL | KV[3546] 처리 실패, 20% 규칙
+[10466.45] WORKER1 | RECV | INFO | KV[3546] 우선 재시도 작업 수신, 대기열=1/10
+[10469.84] WORKER1 | PROC | SUCCESS | KV[3547] 저장 완료, 처리=2.39초, 대기=39.35초
+[10472.39] WORKER1 | PROC | SUCCESS | KV[3548] 저장 완료, 처리=1.55초, 대기=40.73초
+[10476.35] WORKER1 | PROC | SUCCESS | KV[3549] 저장 완료, 처리=2.96초, 대기=41.28초
+[10478.63] WORKER1 | PROC | SUCCESS | KV[3550] 저장 완료, 처리=1.28초, 대기=43.24초
+[10481.70] WORKER1 | PROC | SUCCESS | KV[3551] 저장 완료, 처리=2.07초, 대기=43.52초
+[10484.28] WORKER1 | PROC | SUCCESS | KV[3552] 저장 완료, 처리=1.58초, 대기=44.59초
+[10487.49] WORKER1 | PROC | SUCCESS | KV[3553] 저장 완료, 처리=2.21초, 대기=45.17초
+[10491.21] WORKER1 | PROC | SUCCESS | KV[3554] 저장 완료, 처리=2.72초, 대기=46.39초
+[10494.26] WORKER1 | PROC | SUCCESS | KV[3555] 저장 완료, 처리=2.05초, 대기=48.11초
+[10943.65] WORKER1 | PROC | FAIL | KV[3556] 처리 실패, 20% 규칙
+[10944.65] WORKER1 | RECV | INFO | KV[3556] 우선 재시도 작업 수신, 대기열=1/10
+[10948.43] WORKER1 | PROC | SUCCESS | KV[3557] 저장 완료, 처리=2.78초, 대기=50.20초
+[10951.67] WORKER1 | PROC | FAIL | KV[3558] 처리 실패, 20% 규칙
+[10955.49] WORKER1 | PROC | SUCCESS | KV[3559] 저장 완료, 처리=1.82초, 대기=53.21초
+[10957.71] WORKER1 | PROC | FAIL | KV[3560] 처리 실패, 20% 규칙
+[10958.71] WORKER1 | RECV | INFO | KV[3560] 우선 재시도 작업 수신, 대기열=1/10
+[10961.73] WORKER1 | PROC | SUCCESS | KV[3561] 저장 완료, 처리=2.02초, 대기=54.26초
+[10965.71] WORKER1 | PROC | FAIL | KV[3562] 처리 실패, 20% 규칙
+[10966.71] WORKER1 | RECV | INFO | KV[3562] 우선 재시도 작업 수신, 대기열=1/10
+[10970.57] WORKER1 | PROC | SUCCESS | KV[3563] 저장 완료, 처리=2.86초, 대기=57.26초
+[10972.80] WORKER1 | PROC | FAIL | KV[3564] 처리 실패, 20% 규칙
+[10973.80] WORKER1 | RECV | INFO | KV[3564] 우선 재시도 작업 수신, 대기열=1/10
+[10977.73] WORKER1 | PROC | SUCCESS | KV[3565] 저장 완료, 처리=2.93초, 대기=59.35초
+[10980.19] WORKER1 | PROC | SUCCESS | KV[3566] 저장 완료, 처리=1.46초, 대기=61.27초
+[10983.60] WORKER1 | PROC | SUCCESS | KV[3567] 저장 완료, 처리=2.41초, 대기=61.73초
+[10985.84] WORKER1 | PROC | SUCCESS | KV[3568] 저장 완료, 처리=1.24초, 대기=63.14초
+[10989.13] WORKER1 | PROC | SUCCESS | KV[3569] 저장 완료, 처리=2.29초, 대기=63.38초
+[10991.62] WORKER1 | PROC | SUCCESS | KV[3570] 저장 완료, 처리=1.49초, 대기=64.66초
+[10994.75] WORKER1 | PROC | FAIL | KV[3571] 처리 실패, 20% 규칙
+[10995.75] WORKER1 | RECV | INFO | KV[3571] 우선 재시도 작업 수신, 대기열=1/10
+[10998.24] WORKER1 | PROC | SUCCESS | KV[3572] 저장 완료, 처리=1.49초, 대기=66.28초
+[11001.95] WORKER1 | PROC | SUCCESS | KV[3573] 저장 완료, 처리=2.71초, 대기=66.77초
+[11004.53] WORKER1 | PROC | SUCCESS | KV[3574] 저장 완료, 처리=1.58초, 대기=68.48초
+[11008.19] WORKER1 | PROC | FAIL | KV[3575] 처리 실패, 20% 규칙
+[11009.19] WORKER1 | RECV | INFO | KV[3575] 우선 재시도 작업 수신, 대기열=1/10
+[11012.76] WORKER1 | PROC | SUCCESS | KV[0053] 저장 완료, 처리=2.57초, 대기=67.36초
+[11016.07] WORKER1 | PROC | SUCCESS | KV[3576] 저장 완료, 처리=2.31초, 대기=68.93초
+[11018.19] WORKER1 | PROC | FAIL | KV[3577] 처리 실패, 20% 규칙
+[11019.19] WORKER1 | RECV | INFO | KV[3577] 우선 재시도 작업 수신, 대기열=1/10
+[11021.57] WORKER1 | PROC | SUCCESS | KV[3578] 저장 완료, 처리=1.38초, 대기=70.37초
+[11023.84] WORKER1 | PROC | SUCCESS | KV[3579] 저장 완료, 처리=1.27초, 대기=70.75초
+[11027.39] WORKER1 | PROC | SUCCESS | KV[3580] 저장 완료, 처리=2.55초, 대기=71.01초
+[11030.58] WORKER1 | PROC | SUCCESS | KV[3581] 저장 완료, 처리=2.19초, 대기=72.56초
+[11034.39] WORKER1 | PROC | FAIL | KV[3582] 처리 실패, 20% 규칙
+[11035.39] WORKER1 | RECV | INFO | KV[3582] 우선 재시도 작업 수신, 대기열=1/10
+[11037.79] WORKER1 | PROC | SUCCESS | KV[3583] 저장 완료, 처리=1.40초, 대기=75.57초
+[11041.39] WORKER1 | PROC | SUCCESS | KV[3584] 저장 완료, 처리=2.60초, 대기=75.97초
+[11043.88] WORKER1 | PROC | SUCCESS | KV[3585] 저장 완료, 처리=1.49초, 대기=77.57초
+[11046.11] WORKER1 | PROC | SUCCESS | KV[3586] 저장 완료, 처리=1.23초, 대기=78.05초
+[11049.21] WORKER1 | PROC | SUCCESS | KV[3587] 저장 완료, 처리=2.10초, 대기=78.28초
+[11068.18] WORKER1 | PROC | SUCCESS | KV[3588] 저장 완료, 처리=2.16초, 대기=79.38초
+[11071.52] WORKER1 | PROC | SUCCESS | KV[3589] 저장 완료, 처리=2.34초, 대기=80.54초
+[11074.77] WORKER1 | PROC | FAIL | KV[3590] 처리 실패, 20% 규칙
+[11075.77] WORKER1 | RECV | INFO | KV[3590] 우선 재시도 작업 수신, 대기열=1/10
+[11078.13] WORKER1 | PROC | SUCCESS | KV[3591] 저장 완료, 처리=1.36초, 대기=83.13초
+[11081.53] WORKER1 | PROC | SUCCESS | KV[3592] 저장 완료, 처리=2.40초, 대기=83.50초
+[11084.35] WORKER1 | PROC | SUCCESS | KV[3593] 저장 완료, 처리=1.82초, 대기=84.89초
+[11086.64] WORKER1 | PROC | FAIL | KV[3594] 처리 실패, 20% 규칙
+[11087.64] WORKER1 | RECV | INFO | KV[3594] 우선 재시도 작업 수신, 대기열=1/10
+[11090.14] WORKER1 | PROC | SUCCESS | KV[3595] 저장 완료, 처리=1.50초, 대기=86.00초
+[11092.27] WORKER1 | PROC | SUCCESS | KV[3596] 저장 완료, 처리=1.13초, 대기=86.50초
+[11095.33] WORKER1 | PROC | FAIL | KV[3597] 처리 실패, 20% 규칙
+[11096.33] WORKER1 | RECV | INFO | KV[3597] 우선 재시도 작업 수신, 대기열=1/10
+[11099.33] WORKER1 | PROC | FAIL | KV[3598] 처리 실패, 20% 규칙
+[11100.33] WORKER1 | RECV | INFO | KV[3598] 우선 재시도 작업 수신, 대기열=1/10
+[11102.82] WORKER1 | PROC | SUCCESS | KV[3599] 저장 완료, 처리=1.49초, 대기=88.69초
+[11105.82] WORKER1 | PROC | FAIL | KV[3600] 처리 실패, 20% 규칙
+[11106.82] WORKER1 | RECV | INFO | KV[3600] 우선 재시도 작업 수신, 대기열=1/10
+[11108.99] WORKER1 | PROC | SUCCESS | KV[3601] 저장 완료, 처리=1.17초, 대기=90.19초
+[11111.33] WORKER1 | PROC | SUCCESS | KV[3602] 저장 완료, 처리=1.34초, 대기=90.36초
+[11113.59] WORKER1 | PROC | SUCCESS | KV[3603] 저장 완료, 처리=1.26초, 대기=90.70초
+[11117.28] WORKER1 | PROC | FAIL | KV[3604] 처리 실패, 20% 규칙
+[11118.28] WORKER1 | RECV | INFO | KV[3604] 우선 재시도 작업 수신, 대기열=1/10
+[11120.55] WORKER1 | PROC | FAIL | KV[3605] 처리 실패, 20% 규칙
+[11121.55] WORKER1 | RECV | INFO | KV[3605] 우선 재시도 작업 수신, 대기열=1/10
+[11124.09] WORKER1 | PROC | SUCCESS | KV[3606] 저장 완료, 처리=1.54초, 대기=90.57초
+[11763.06] WORKER1 | PROC | SUCCESS | KV[3607] 저장 완료, 처리=2.87초, 대기=91.11초
+[11766.37] WORKER1 | PROC | SUCCESS | KV[3608] 저장 완료, 처리=2.31초, 대기=92.98초
+[11770.33] WORKER1 | PROC | FAIL | KV[3609] 처리 실패, 20% 규칙
+[11771.33] WORKER1 | RECV | INFO | KV[3609] 우선 재시도 작업 수신, 대기열=1/10
+[11773.67] WORKER1 | PROC | SUCCESS | KV[3610] 저장 완료, 처리=1.34초, 대기=96.24초
+[11776.13] WORKER1 | PROC | SUCCESS | KV[3611] 저장 완료, 처리=1.46초, 대기=96.58초
+[11779.82] WORKER1 | PROC | SUCCESS | KV[3612] 저장 완료, 처리=2.69초, 대기=97.04초
+[11783.63] WORKER1 | PROC | SUCCESS | KV[3613] 저장 완료, 처리=2.81초, 대기=98.72초
+[11786.54] WORKER1 | PROC | SUCCESS | KV[3614] 저장 완료, 처리=1.91초, 대기=100.53초
+[11789.92] WORKER1 | PROC | SUCCESS | KV[3615] 저장 완료, 처리=2.38초, 대기=101.44초
+[11793.00] WORKER1 | PROC | SUCCESS | KV[3616] 저장 완료, 처리=2.08초, 대기=102.82초
+[11796.09] WORKER1 | PROC | SUCCESS | KV[3617] 저장 완료, 처리=2.09초, 대기=103.90초
+[11799.50] WORKER1 | PROC | SUCCESS | KV[3618] 저장 완료, 처리=2.41초, 대기=105.00초
+[11802.35] WORKER1 | PROC | SUCCESS | KV[3619] 저장 완료, 처리=1.85초, 대기=106.41초
+[11805.72] WORKER1 | PROC | SUCCESS | KV[3620] 저장 완료, 처리=2.37초, 대기=107.26초
+[11807.97] WORKER1 | PROC | SUCCESS | KV[3621] 저장 완료, 처리=1.25초, 대기=108.64초
+[11810.07] WORKER1 | PROC | SUCCESS | KV[3622] 저장 완료, 처리=1.10초, 대기=108.88초
+[11813.36] WORKER1 | PROC | SUCCESS | KV[3623] 저장 완료, 처리=2.29초, 대기=108.99초
+[11815.65] WORKER1 | PROC | FAIL | KV[3624] 처리 실패, 20% 규칙
+[11819.41] WORKER1 | PROC | SUCCESS | KV[3625] 저장 완료, 처리=1.76초, 대기=110.57초
+[11821.75] WORKER1 | PROC | SUCCESS | KV[3626] 저장 완료, 처리=1.34초, 대기=111.33초
+[11824.61] WORKER1 | PROC | SUCCESS | KV[3627] 저장 완료, 처리=1.86초, 대기=111.67초
+[11827.97] WORKER1 | PROC | SUCCESS | KV[3628] 저장 완료, 처리=2.36초, 대기=112.53초
+[11830.90] WORKER1 | PROC | SUCCESS | KV[3629] 저장 완료, 처리=1.93초, 대기=113.89초
+[11834.00] WORKER1 | PROC | SUCCESS | KV[3630] 저장 완료, 처리=2.10초, 대기=114.82초
+[11837.03] WORKER1 | PROC | FAIL | KV[3631] 처리 실패, 20% 규칙
+[11838.03] WORKER1 | RECV | INFO | KV[3631] 우선 재시도 작업 수신, 대기열=1/10
+[11841.51] WORKER1 | PROC | SUCCESS | KV[3632] 저장 완료, 처리=2.48초, 대기=116.95초
+[11844.56] WORKER1 | PROC | SUCCESS | KV[0055] 저장 완료, 처리=2.05초, 대기=115.05초
+[11848.52] WORKER1 | PROC | SUCCESS | KV[3633] 저장 완료, 처리=2.96초, 대기=116.10초
+[11851.61] WORKER1 | PROC | FAIL | KV[3634] 처리 실패, 20% 규칙
+[11855.02] WORKER1 | PROC | SUCCESS | KV[3635] 저장 완료, 처리=1.41초, 대기=119.15초
+[11858.25] WORKER1 | PROC | SUCCESS | KV[3636] 저장 완료, 처리=2.23초, 대기=119.56초
+[11860.92] WORKER1 | PROC | SUCCESS | KV[3637] 저장 완료, 처리=1.67초, 대기=120.79초
+[11864.49] WORKER1 | PROC | SUCCESS | KV[3638] 저장 완료, 처리=2.57초, 대기=121.46초
+[11867.34] WORKER1 | PROC | SUCCESS | KV[3639] 저장 완료, 처리=1.85초, 대기=123.03초
+[11870.58] WORKER1 | PROC | SUCCESS | KV[3640] 저장 완료, 처리=2.24초, 대기=123.88초
+[11873.15] WORKER1 | PROC | SUCCESS | KV[3641] 저장 완료, 처리=1.57초, 대기=125.12초
+[11876.89] WORKER1 | PROC | SUCCESS | KV[3642] 저장 완료, 처리=2.74초, 대기=125.69초
+[11880.59] WORKER1 | PROC | FAIL | KV[3643] 처리 실패, 20% 규칙
+[11881.59] WORKER1 | RECV | INFO | KV[3643] 우선 재시도 작업 수신, 대기열=1/10
+[11883.93] WORKER1 | PROC | FAIL | KV[3644] 처리 실패, 20% 규칙
+[11884.93] WORKER1 | RECV | INFO | KV[3644] 우선 재시도 작업 수신, 대기열=1/10
+[11888.39] WORKER1 | PROC | SUCCESS | KV[3645] 저장 완료, 처리=2.46초, 대기=129.47초
+[11891.31] WORKER1 | PROC | SUCCESS | KV[3646] 저장 완료, 처리=1.92초, 대기=130.94초
+[11895.26] WORKER1 | PROC | SUCCESS | KV[3647] 저장 완료, 처리=2.95초, 대기=131.86초
+[11897.45] WORKER1 | PROC | SUCCESS | KV[3648] 저장 완료, 처리=1.19초, 대기=133.81초
+[11901.25] WORKER1 | PROC | SUCCESS | KV[3649] 저장 완료, 처리=2.80초, 대기=134.00초
+[11905.06] WORKER1 | PROC | SUCCESS | KV[3650] 저장 완료, 처리=2.81초, 대기=135.79초
+[11907.66] WORKER1 | PROC | SUCCESS | KV[3651] 저장 완료, 처리=1.60초, 대기=137.61초
+[11910.41] WORKER1 | PROC | SUCCESS | KV[3652] 저장 완료, 처리=1.75초, 대기=138.21초
+[11914.28] WORKER1 | PROC | SUCCESS | KV[3653] 저장 완료, 처리=2.87초, 대기=138.96초
+[11917.04] WORKER1 | PROC | SUCCESS | KV[3654] 저장 완료, 처리=1.76초, 대기=140.83초
+[11919.81] WORKER1 | PROC | SUCCESS | KV[3655] 저장 완료, 처리=1.77초, 대기=141.60초
+[11923.03] WORKER1 | PROC | FAIL | KV[3656] 처리 실패, 20% 규칙
+[11924.03] WORKER1 | RECV | INFO | KV[3656] 우선 재시도 작업 수신, 대기열=1/10
+[11926.15] WORKER1 | PROC | SUCCESS | KV[3657] 저장 완료, 처리=1.12초, 대기=143.58초
+[11930.08] WORKER1 | PROC | SUCCESS | KV[3658] 저장 완료, 처리=2.93초, 대기=143.71초
+[11933.05] WORKER1 | PROC | SUCCESS | KV[3659] 저장 완료, 처리=1.97초, 대기=145.64초
+[11936.77] WORKER1 | PROC | SUCCESS | KV[3660] 저장 완료, 처리=2.72초, 대기=146.61초
+[12429.87] WORKER1 | PROC | FAIL | KV[3661] 처리 실패, 20% 규칙
+[12430.87] WORKER1 | RECV | INFO | KV[3661] 우선 재시도 작업 수신, 대기열=1/10
+[12434.78] WORKER1 | PROC | FAIL | KV[3662] 처리 실패, 20% 규칙
+[12435.78] WORKER1 | RECV | INFO | KV[3662] 우선 재시도 작업 수신, 대기열=1/10
+[12439.62] WORKER1 | PROC | SUCCESS | KV[3663] 저장 완료, 처리=2.84초, 대기=147.95초
+[12443.14] WORKER1 | PROC | SUCCESS | KV[3664] 저장 완료, 처리=2.52초, 대기=149.79초
+[12445.50] WORKER1 | PROC | SUCCESS | KV[3665] 저장 완료, 처리=1.36초, 대기=151.30초
+[12448.40] WORKER1 | PROC | FAIL | KV[3666] 처리 실패, 20% 규칙
+[12449.40] WORKER1 | RECV | INFO | KV[3666] 우선 재시도 작업 수신, 대기열=1/10
+[12453.18] WORKER1 | PROC | SUCCESS | KV[3667] 저장 완료, 처리=2.78초, 대기=152.56초
+[12456.45] WORKER1 | PROC | SUCCESS | KV[3668] 저장 완료, 처리=2.27초, 대기=154.35초
+[12459.85] WORKER1 | PROC | SUCCESS | KV[3669] 저장 완료, 처리=2.40초, 대기=155.61초
+[12462.03] WORKER1 | PROC | SUCCESS | KV[3670] 저장 완료, 처리=1.18초, 대기=157.01초
+[12464.25] WORKER1 | PROC | FAIL | KV[3671] 처리 실패, 20% 규칙
+[12465.25] WORKER1 | RECV | INFO | KV[3671] 우선 재시도 작업 수신, 대기열=1/10
+[12469.09] WORKER1 | PROC | SUCCESS | KV[3672] 저장 완료, 처리=2.84초, 대기=157.41초
+[12472.82] WORKER1 | PROC | SUCCESS | KV[3673] 저장 완료, 처리=2.73초, 대기=159.24초
+[12475.34] WORKER1 | PROC | FAIL | KV[3674] 처리 실패, 20% 규칙
+[12476.34] WORKER1 | RECV | INFO | KV[3674] 우선 재시도 작업 수신, 대기열=1/10
+[12479.04] WORKER1 | PROC | SUCCESS | KV[3675] 저장 완료, 처리=1.70초, 대기=161.49초
+[12481.53] WORKER1 | PROC | SUCCESS | KV[3676] 저장 완료, 처리=1.49초, 대기=162.19초
+[12485.14] WORKER1 | PROC | FAIL | KV[3677] 처리 실패, 20% 규칙
+[12486.14] WORKER1 | RECV | INFO | KV[3677] 우선 재시도 작업 수신, 대기열=1/10
+[12488.86] WORKER1 | PROC | FAIL | KV[3678] 처리 실패, 20% 규칙
+[12489.86] WORKER1 | RECV | INFO | KV[3678] 우선 재시도 작업 수신, 대기열=1/10
+[12492.20] WORKER1 | PROC | SUCCESS | KV[3679] 저장 완료, 처리=1.34초, 대기=165.01초
+[12494.40] WORKER1 | PROC | SUCCESS | KV[3680] 저장 완료, 처리=1.20초, 대기=165.35초
+[12497.31] WORKER1 | PROC | SUCCESS | KV[3681] 저장 완료, 처리=1.91초, 대기=165.55초
+[12500.28] WORKER1 | PROC | SUCCESS | KV[3682] 저장 완료, 처리=1.97초, 대기=166.46초
+[12502.37] WORKER1 | PROC | SUCCESS | KV[3683] 저장 완료, 처리=1.09초, 대기=167.43초
+[12505.70] WORKER1 | PROC | SUCCESS | KV[3684] 저장 완료, 처리=2.33초, 대기=167.52초
+[12508.12] WORKER1 | PROC | FAIL | KV[3685] 처리 실패, 20% 규칙
+[12509.12] WORKER1 | RECV | INFO | KV[3685] 우선 재시도 작업 수신, 대기열=1/10
+[12512.64] WORKER1 | PROC | SUCCESS | KV[3686] 저장 완료, 처리=2.52초, 대기=169.27초
+[12516.54] WORKER1 | PROC | SUCCESS | KV[3687] 저장 완료, 처리=2.90초, 대기=170.79초
+[12519.30] WORKER1 | PROC | SUCCESS | KV[3688] 저장 완료, 처리=1.76초, 대기=172.69초
+[12523.09] WORKER1 | PROC | SUCCESS | KV[3689] 저장 완료, 처리=2.79초, 대기=173.45초
+[12526.63] WORKER1 | PROC | SUCCESS | KV[3690] 저장 완료, 처리=2.54초, 대기=173.03초
+[12529.29] WORKER1 | PROC | SUCCESS | KV[3691] 저장 완료, 처리=1.66초, 대기=174.58초
+[12531.79] WORKER1 | PROC | SUCCESS | KV[3692] 저장 완료, 처리=1.50초, 대기=175.23초
+[12534.98] WORKER1 | PROC | SUCCESS | KV[3693] 저장 완료, 처리=2.19초, 대기=175.73초
+[12537.44] WORKER1 | PROC | SUCCESS | KV[3694] 저장 완료, 처리=1.46초, 대기=176.93초
+[12540.74] WORKER1 | PROC | SUCCESS | KV[3695] 저장 완료, 처리=2.30초, 대기=177.39초
+[12543.54] WORKER1 | PROC | SUCCESS | KV[3696] 저장 완료, 처리=1.80초, 대기=178.69초
+[12546.68] WORKER1 | PROC | FAIL | KV[3697] 처리 실패, 20% 규칙
+[12547.68] WORKER1 | RECV | INFO | KV[3697] 우선 재시도 작업 수신, 대기열=1/10
+[12551.51] WORKER1 | PROC | SUCCESS | KV[3698] 저장 완료, 처리=2.83초, 대기=180.62초
+[12554.10] WORKER1 | PROC | SUCCESS | KV[3699] 저장 완료, 처리=1.59초, 대기=182.46초
+[12556.96] WORKER1 | PROC | SUCCESS | KV[3700] 저장 완료, 처리=1.86초, 대기=183.05초
+[12559.65] WORKER1 | PROC | FAIL | KV[3701] 처리 실패, 20% 규칙
+[12560.65] WORKER1 | RECV | INFO | KV[3701] 우선 재시도 작업 수신, 대기열=1/10
+[12563.46] WORKER1 | PROC | SUCCESS | KV[3702] 저장 완료, 처리=1.81초, 대기=184.59초
+[12566.98] WORKER1 | PROC | FAIL | KV[3703] 처리 실패, 20% 규칙
+[12567.98] WORKER1 | RECV | INFO | KV[3703] 우선 재시도 작업 수신, 대기열=1/10
+[12570.58] WORKER1 | PROC | SUCCESS | KV[3704] 저장 완료, 처리=1.60초, 대기=186.92초
+[12573.55] WORKER1 | PROC | FAIL | KV[3705] 처리 실패, 20% 규칙
+[12574.55] WORKER1 | RECV | INFO | KV[3705] 우선 재시도 작업 수신, 대기열=1/10
+[12577.66] WORKER1 | PROC | SUCCESS | KV[3706] 저장 완료, 처리=2.11초, 대기=188.49초
+[12581.34] WORKER1 | PROC | SUCCESS | KV[3707] 저장 완료, 처리=2.68초, 대기=189.60초
+[12583.73] WORKER1 | PROC | FAIL | KV[3708] 처리 실패, 20% 규칙
+[12584.73] WORKER1 | RECV | INFO | KV[3708] 우선 재시도 작업 수신, 대기열=1/10
+[12587.46] WORKER1 | PROC | SUCCESS | KV[3709] 저장 완료, 처리=1.73초, 대기=191.67초
+[12590.77] WORKER1 | PROC | SUCCESS | KV[3710] 저장 완료, 처리=2.31초, 대기=192.40초
+[12594.02] WORKER1 | PROC | FAIL | KV[3711] 처리 실패, 20% 규칙
+[12595.02] WORKER1 | RECV | INFO | KV[3711] 우선 재시도 작업 수신, 대기열=1/10
+[12597.38] WORKER1 | PROC | SUCCESS | KV[3712] 저장 완료, 처리=1.36초, 대기=194.96초
+[12599.83] WORKER1 | PROC | FAIL | KV[3713] 처리 실패, 20% 규칙
+[12600.83] WORKER1 | RECV | INFO | KV[3713] 우선 재시도 작업 수신, 대기열=1/10
+[12603.08] WORKER1 | PROC | SUCCESS | KV[3714] 저장 완료, 처리=1.25초, 대기=195.77초
+[12605.98] WORKER1 | PROC | SUCCESS | KV[3715] 저장 완료, 처리=1.90초, 대기=196.02초
+[12608.18] WORKER1 | PROC | SUCCESS | KV[3716] 저장 완료, 처리=1.20초, 대기=196.91초
+[12610.76] WORKER1 | PROC | SUCCESS | KV[3717] 저장 완료, 처리=1.58초, 대기=197.12초
+[12614.48] WORKER1 | PROC | SUCCESS | KV[3718] 저장 완료, 처리=2.72초, 대기=197.69초
+[12617.92] WORKER1 | PROC | SUCCESS | KV[3719] 저장 완료, 처리=2.44초, 대기=196.61초
+[12621.73] WORKER1 | PROC | SUCCESS | KV[3720] 저장 완료, 처리=2.81초, 대기=198.05초
+[12624.57] WORKER1 | PROC | SUCCESS | KV[3721] 저장 완료, 처리=1.84초, 대기=199.86초
+[12627.49] WORKER1 | PROC | SUCCESS | KV[3722] 저장 완료, 처리=1.92초, 대기=200.69초
+[12630.51] WORKER1 | PROC | SUCCESS | KV[3723] 저장 완료, 처리=2.02초, 대기=201.61초
+[12633.06] WORKER1 | PROC | SUCCESS | KV[3724] 저장 완료, 처리=1.55초, 대기=202.64초
+[12635.59] WORKER1 | PROC | FAIL | KV[3725] 처리 실패, 20% 규칙
+[12636.59] WORKER1 | RECV | INFO | KV[3725] 우선 재시도 작업 수신, 대기열=1/10
+[12638.73] WORKER1 | PROC | SUCCESS | KV[3726] 저장 완료, 처리=1.14초, 대기=203.71초
+[12641.25] WORKER1 | PROC | SUCCESS | KV[3727] 저장 완료, 처리=1.52초, 대기=203.86초
+[12645.20] WORKER1 | PROC | SUCCESS | KV[3728] 저장 완료, 처리=2.95초, 대기=204.37초
+[12649.16] WORKER1 | PROC | SUCCESS | KV[3729] 저장 완료, 처리=2.96초, 대기=206.33초
+[12652.18] WORKER1 | PROC | FAIL | KV[3730] 처리 실패, 20% 규칙
+[12653.18] WORKER1 | RECV | INFO | KV[3730] 우선 재시도 작업 수신, 대기열=1/10
+[12655.94] WORKER1 | PROC | SUCCESS | KV[3731] 저장 완료, 처리=1.76초, 대기=209.31초
+[12658.21] WORKER1 | PROC | SUCCESS | KV[3732] 저장 완료, 처리=1.27초, 대기=210.06초
+[12661.85] WORKER1 | PROC | SUCCESS | KV[3733] 저장 완료, 처리=2.64초, 대기=210.33초
+[12665.46] WORKER1 | PROC | SUCCESS | KV[3734] 저장 완료, 처리=2.61초, 대기=211.97초
+[12668.83] WORKER1 | PROC | SUCCESS | KV[3735] 저장 완료, 처리=2.37초, 대기=213.59초
+[12672.24] WORKER1 | PROC | SUCCESS | KV[3736] 저장 완료, 처리=2.41초, 대기=214.96초
+[12675.65] WORKER1 | PROC | SUCCESS | KV[3737] 저장 완료, 처리=2.41초, 대기=216.37초
+[12677.98] WORKER1 | PROC | FAIL | KV[3738] 처리 실패, 20% 규칙
+[12678.98] WORKER1 | RECV | INFO | KV[3738] 우선 재시도 작업 수신, 대기열=1/10
+[12681.18] WORKER1 | PROC | SUCCESS | KV[3739] 저장 완료, 처리=1.20초, 대기=218.11초
+[12684.57] WORKER1 | PROC | SUCCESS | KV[3740] 저장 완료, 처리=2.39초, 대기=218.30초
+[12688.42] WORKER1 | PROC | SUCCESS | KV[3741] 저장 완료, 처리=2.85초, 대기=219.70초
+[12691.12] WORKER1 | PROC | SUCCESS | KV[3742] 저장 완료, 처리=1.70초, 대기=221.55초
+[12694.21] WORKER1 | PROC | SUCCESS | KV[3743] 저장 완료, 처리=2.09초, 대기=222.25초
+[12698.07] WORKER1 | PROC | SUCCESS | KV[3744] 저장 완료, 처리=2.86초, 대기=223.34초
+[12700.77] WORKER1 | PROC | SUCCESS | KV[3745] 저장 완료, 처리=1.70초, 대기=225.21초
+[12702.91] WORKER1 | PROC | SUCCESS | KV[3746] 저장 완료, 처리=1.14초, 대기=225.90초
+[12706.02] WORKER1 | PROC | SUCCESS | KV[3747] 저장 완료, 처리=2.11초, 대기=226.04초
+[12708.47] WORKER1 | PROC | SUCCESS | KV[3748] 저장 완료, 처리=1.45초, 대기=224.37초
+[12711.25] WORKER1 | PROC | SUCCESS | KV[3749] 저장 완료, 처리=1.78초, 대기=224.82초
+[12713.35] WORKER1 | PROC | SUCCESS | KV[3750] 저장 완료, 처리=1.10초, 대기=225.60초
+[12715.67] WORKER1 | PROC | SUCCESS | KV[3751] 저장 완료, 처리=1.32초, 대기=225.70초
+[12719.11] WORKER1 | PROC | SUCCESS | KV[3752] 저장 완료, 처리=2.44초, 대기=226.02초
+[12723.03] WORKER1 | PROC | SUCCESS | KV[3753] 저장 완료, 처리=2.92초, 대기=227.46초
+[12726.60] WORKER1 | PROC | SUCCESS | KV[3754] 저장 완료, 처리=2.57초, 대기=229.38초
+[12730.48] WORKER1 | PROC | SUCCESS | KV[3755] 저장 완료, 처리=2.88초, 대기=230.95초
+[12733.27] WORKER1 | PROC | SUCCESS | KV[3756] 저장 완료, 처리=1.79초, 대기=232.83초
+[12736.83] WORKER1 | PROC | SUCCESS | KV[3757] 저장 완료, 처리=2.56초, 대기=233.62초
+[12739.72] WORKER1 | PROC | SUCCESS | KV[3758] 저장 완료, 처리=1.89초, 대기=235.17초
+[12741.75] WORKER1 | PROC | SUCCESS | KV[3759] 저장 완료, 처리=1.03초, 대기=236.06초
+[12745.37] WORKER1 | PROC | SUCCESS | KV[3760] 저장 완료, 처리=2.62초, 대기=236.09초
+[12748.15] WORKER1 | PROC | SUCCESS | KV[3761] 저장 완료, 처리=1.78초, 대기=237.71초
+[12751.56] WORKER1 | PROC | SUCCESS | KV[3762] 저장 완료, 처리=2.41초, 대기=238.49초
+[12754.38] WORKER1 | PROC | SUCCESS | KV[3763] 저장 완료, 처리=1.82초, 대기=239.90초
+[12757.40] WORKER1 | PROC | SUCCESS | KV[3764] 저장 완료, 처리=2.02초, 대기=240.72초
+[12760.71] WORKER1 | PROC | FAIL | KV[3765] 처리 실패, 20% 규칙
+[12761.71] WORKER1 | RECV | INFO | KV[3765] 우선 재시도 작업 수신, 대기열=1/10
+[12764.61] WORKER1 | PROC | SUCCESS | KV[3766] 저장 완료, 처리=1.90초, 대기=243.06초
+[12767.35] WORKER1 | PROC | SUCCESS | KV[3767] 저장 완료, 처리=1.74초, 대기=243.96초
+[12769.55] WORKER1 | PROC | SUCCESS | KV[3768] 저장 완료, 처리=1.20초, 대기=244.70초
+[13288.73] WORKER1 | PROC | FAIL | KV[3769] 처리 실패, 20% 규칙
+[13289.73] WORKER1 | RECV | INFO | KV[3769] 우선 재시도 작업 수신, 대기열=1/10
+[13292.40] WORKER1 | PROC | FAIL | KV[3770] 처리 실패, 20% 규칙
+[13293.40] WORKER1 | RECV | INFO | KV[3770] 우선 재시도 작업 수신, 대기열=1/10
+[13295.86] WORKER1 | PROC | SUCCESS | KV[3771] 저장 완료, 처리=1.46초, 대기=246.36초
+[13298.49] WORKER1 | PROC | SUCCESS | KV[3772] 저장 완료, 처리=1.63초, 대기=246.81초
+[13301.47] WORKER1 | PROC | SUCCESS | KV[3773] 저장 완료, 처리=1.98초, 대기=247.44초
+[13304.78] WORKER1 | PROC | SUCCESS | KV[3774] 저장 완료, 처리=2.31초, 대기=248.41초
+[13307.28] WORKER1 | PROC | SUCCESS | KV[3775] 저장 완료, 처리=1.50초, 대기=249.72초
+[13309.48] WORKER1 | PROC | SUCCESS | KV[3776] 저장 완료, 처리=1.20초, 대기=250.22초
+[13311.64] WORKER1 | PROC | FAIL | KV[0247] 처리 실패, 20% 규칙
+[13312.64] WORKER1 | RECV | INFO | KV[0247] 우선 재시도 작업 수신, 대기열=1/10
+[13316.32] WORKER1 | PROC | FAIL | KV[0254] 처리 실패, 20% 규칙
+[13317.32] WORKER1 | RECV | INFO | KV[0254] 우선 재시도 작업 수신, 대기열=1/10
+[13320.52] WORKER1 | PROC | SUCCESS | KV[0623] 저장 완료, 처리=2.20초, 대기=0.00초
+[13322.59] WORKER1 | PROC | SUCCESS | KV[0630] 저장 완료, 처리=1.07초, 대기=0.00초
+[13326.17] WORKER1 | PROC | FAIL | KV[0633] 처리 실패, 20% 규칙
+[13327.17] WORKER1 | RECV | INFO | KV[0633] 우선 재시도 작업 수신, 대기열=1/10
+[13331.16] WORKER1 | PROC | SUCCESS | KV[0514] 저장 완료, 처리=2.99초, 대기=0.00초
+[13334.09] WORKER1 | PROC | SUCCESS | KV[0642] 저장 완료, 처리=1.93초, 대기=0.00초
+[13336.68] WORKER1 | PROC | FAIL | KV[0644] 처리 실패, 20% 규칙
+[13337.68] WORKER1 | RECV | INFO | KV[0644] 우선 재시도 작업 수신, 대기열=1/10
+[13340.04] WORKER1 | PROC | SUCCESS | KV[0648] 저장 완료, 처리=1.36초, 대기=0.00초
+[13344.04] WORKER1 | PROC | SUCCESS | KV[0654] 저장 완료, 처리=3.00초, 대기=0.00초
+[13346.42] WORKER1 | PROC | SUCCESS | KV[0655] 저장 완료, 처리=1.38초, 대기=0.00초
+[13348.62] WORKER1 | PROC | FAIL | KV[0462] 처리 실패, 20% 규칙
+[13349.62] WORKER1 | RECV | INFO | KV[0462] 우선 재시도 작업 수신, 대기열=1/10
+[13352.94] WORKER1 | PROC | SUCCESS | KV[0670] 저장 완료, 처리=2.32초, 대기=0.00초
+[13356.31] WORKER1 | PROC | SUCCESS | KV[0674] 저장 완료, 처리=2.37초, 대기=0.00초
+[13358.79] WORKER1 | PROC | SUCCESS | KV[0684] 저장 완료, 처리=1.48초, 대기=0.00초
+[13361.01] WORKER1 | PROC | SUCCESS | KV[0356] 저장 완료, 처리=1.22초, 대기=0.00초
+[13364.84] WORKER1 | PROC | SUCCESS | KV[0728] 저장 완료, 처리=2.83초, 대기=0.00초
+[13367.35] WORKER1 | PROC | SUCCESS | KV[0398] 저장 완료, 처리=1.51초, 대기=0.00초
+[13370.29] WORKER1 | PROC | SUCCESS | KV[0981] 저장 완료, 처리=1.94초, 대기=0.00초
+[13373.85] WORKER1 | PROC | SUCCESS | KV[0987] 저장 완료, 처리=2.56초, 대기=0.00초
+[13380.11] WORKER1 | RECV | INFO | KV[1678] 우선 재시도 작업 수신, 대기열=1/10
+[13647.25] WORKER1 | PROC | SUCCESS | KV[0993] 저장 완료, 처리=1.32초, 대기=0.00초
+[13658.37] WORKER1 | RECV | INFO | KV[3865] 우선 재시도 작업 수신, 대기열=1/10
+[14192.34] WORKER1 | PROC | SUCCESS | KV[1005] 저장 완료, 처리=2.62초, 대기=0.00초
+[14202.47] WORKER1 | PROC | SUCCESS | KV[1007] 저장 완료, 처리=2.03초, 대기=0.00초
+[14205.37] WORKER1 | PROC | SUCCESS | KV[1008] 저장 완료, 처리=1.90초, 대기=0.00초
+[14208.72] WORKER1 | PROC | SUCCESS | KV[1010] 저장 완료, 처리=2.35초, 대기=0.00초
+[14212.17] WORKER1 | PROC | SUCCESS | KV[1012] 저장 완료, 처리=2.45초, 대기=0.00초
+[14214.38] WORKER1 | PROC | FAIL | KV[0746] 처리 실패, 20% 규칙
+[14218.69] WORKER1 | PROC | SUCCESS | KV[1022] 저장 완료, 처리=2.31초, 대기=0.00초
+[14221.73] WORKER1 | PROC | FAIL | KV[1024] 처리 실패, 20% 규칙
+[14222.73] WORKER1 | RECV | INFO | KV[1024] 우선 재시도 작업 수신, 대기열=1/10
+[14225.46] WORKER1 | PROC | SUCCESS | KV[1025] 저장 완료, 처리=1.73초, 대기=0.00초
+[14229.37] WORKER1 | PROC | SUCCESS | KV[1030] 저장 완료, 처리=2.91초, 대기=0.00초
+[14231.47] WORKER1 | PROC | SUCCESS | KV[1043] 저장 완료, 처리=1.10초, 대기=0.00초
+[14472.94] WORKER1 | PROC | SUCCESS | KV[1046] 저장 완료, 처리=2.22초, 대기=0.00초
+[14475.02] WORKER1 | PROC | SUCCESS | KV[1051] 저장 완료, 처리=1.08초, 대기=0.00초
+[14478.41] WORKER1 | PROC | SUCCESS | KV[1057] 저장 완료, 처리=2.39초, 대기=0.00초
+[14481.24] WORKER1 | PROC | SUCCESS | KV[1058] 저장 완료, 처리=1.83초, 대기=0.00초
+[14531.68] WORKER1 | PROC | SUCCESS | KV[1065] 저장 완료, 처리=1.82초, 대기=0.00초
+[14547.92] WORKER1 | RECV | INFO | KV[2090] 우선 재시도 작업 수신, 대기열=1/10
+[14712.43] WORKER1 | PROC | SUCCESS | KV[1066] 저장 완료, 처리=1.73초, 대기=0.00초
+[14714.84] WORKER1 | PROC | SUCCESS | KV[1067] 저장 완료, 처리=1.41초, 대기=0.00초
+[14717.77] WORKER1 | PROC | SUCCESS | KV[0873] 저장 완료, 처리=1.93초, 대기=0.00초
+[16929.66] WORKER1 | PROC | FAIL | KV[1087] 처리 실패, 20% 규칙
+[16930.66] WORKER1 | RECV | INFO | KV[1087] 우선 재시도 작업 수신, 대기열=1/10
+[16933.02] WORKER1 | PROC | SUCCESS | KV[1091] 저장 완료, 처리=1.36초, 대기=0.00초
+[16935.72] WORKER1 | PROC | FAIL | KV[0812] 처리 실패, 20% 규칙
+[16936.72] WORKER1 | RECV | INFO | KV[0812] 우선 재시도 작업 수신, 대기열=1/10
+[16940.23] WORKER1 | PROC | SUCCESS | KV[1096] 저장 완료, 처리=2.51초, 대기=0.00초
+[16942.80] WORKER1 | PROC | SUCCESS | KV[1099] 저장 완료, 처리=1.57초, 대기=0.00초
+[16945.25] WORKER1 | PROC | SUCCESS | KV[1225] 저장 완료, 처리=1.45초, 대기=0.00초
+[16948.06] WORKER1 | PROC | SUCCESS | KV[1126] 저장 완료, 처리=1.81초, 대기=0.00초
+[16950.79] WORKER1 | PROC | SUCCESS | KV[1133] 저장 완료, 처리=1.73초, 대기=0.00초
+[19033.49] WORKER1 | PROC | SUCCESS | KV[1138] 저장 완료, 처리=1.84초, 대기=0.00초
+[19036.32] WORKER1 | PROC | SUCCESS | KV[1145] 저장 완료, 처리=1.83초, 대기=0.00초
+[19039.76] WORKER1 | PROC | SUCCESS | KV[1152] 저장 완료, 처리=2.44초, 대기=0.00초
+[19042.78] WORKER1 | PROC | SUCCESS | KV[1154] 저장 완료, 처리=2.02초, 대기=0.00초
+[19045.66] WORKER1 | PROC | SUCCESS | KV[1158] 저장 완료, 처리=1.88초, 대기=0.00초
+[19849.10] WORKER1 | PROC | SUCCESS | KV[1589] 저장 완료, 처리=1.96초, 대기=0.00초
+[19852.91] WORKER1 | PROC | SUCCESS | KV[3502] 저장 완료, 처리=2.81초, 대기=0.00초
+[19855.64] WORKER1 | PROC | FAIL | KV[3503] 처리 실패, 20% 규칙
+[19860.12] WORKER1 | PROC | SUCCESS | KV[3519] 저장 완료, 처리=2.48초, 대기=0.00초
+[19863.43] WORKER1 | PROC | SUCCESS | KV[3538] 저장 완료, 처리=2.31초, 대기=0.00초
+[19866.15] WORKER1 | PROC | SUCCESS | KV[3543] 저장 완료, 처리=1.72초, 대기=0.00초
+[19868.37] WORKER1 | PROC | FAIL | KV[3546] 처리 실패, 20% 규칙
+[19869.37] WORKER1 | RECV | INFO | KV[3546] 우선 재시도 작업 수신, 대기열=1/10
+[19872.32] WORKER1 | PROC | SUCCESS | KV[3556] 저장 완료, 처리=1.95초, 대기=0.00초
+[19875.78] WORKER1 | PROC | FAIL | KV[3560] 처리 실패, 20% 규칙
+[19880.65] WORKER1 | PROC | SUCCESS | KV[3562] 저장 완료, 처리=2.87초, 대기=0.00초
+[19884.57] WORKER1 | PROC | FAIL | KV[3564] 처리 실패, 20% 규칙
+[19885.57] WORKER1 | RECV | INFO | KV[3564] 우선 재시도 작업 수신, 대기열=1/10
+[19888.00] WORKER1 | PROC | SUCCESS | KV[3571] 저장 완료, 처리=1.43초, 대기=0.00초
+[19890.10] WORKER1 | PROC | SUCCESS | KV[3575] 저장 완료, 처리=1.10초, 대기=0.00초
+[19893.96] WORKER1 | PROC | SUCCESS | KV[3577] 저장 완료, 처리=2.86초, 대기=0.00초
+[19897.02] WORKER1 | PROC | SUCCESS | KV[3582] 저장 완료, 처리=2.06초, 대기=0.00초
+[22071.80] WORKER1 | PROC | SUCCESS | KV[3590] 저장 완료, 처리=1.04초, 대기=0.00초
+[22074.99] WORKER1 | PROC | SUCCESS | KV[3594] 저장 완료, 처리=2.19초, 대기=0.00초
+[22077.37] WORKER1 | PROC | FAIL | KV[3597] 처리 실패, 20% 규칙
+[22080.41] WORKER1 | PROC | SUCCESS | KV[3598] 저장 완료, 처리=1.04초, 대기=0.00초
+[22082.73] WORKER1 | PROC | SUCCESS | KV[3600] 저장 완료, 처리=1.32초, 대기=0.00초
+[22085.52] WORKER1 | PROC | FAIL | KV[3604] 처리 실패, 20% 규칙
+[22086.52] WORKER1 | RECV | INFO | KV[3604] 우선 재시도 작업 수신, 대기열=1/10
+[22089.69] WORKER1 | PROC | SUCCESS | KV[3605] 저장 완료, 처리=2.17초, 대기=0.00초
+[22092.57] WORKER1 | PROC | SUCCESS | KV[3609] 저장 완료, 처리=1.88초, 대기=0.00초
+[22095.34] WORKER1 | PROC | FAIL | KV[3631] 처리 실패, 20% 규칙
+[22096.34] WORKER1 | RECV | INFO | KV[3631] 우선 재시도 작업 수신, 대기열=1/10
+[22099.58] WORKER1 | PROC | SUCCESS | KV[3643] 저장 완료, 처리=2.24초, 대기=0.00초
+[22102.37] WORKER1 | PROC | SUCCESS | KV[3644] 저장 완료, 처리=1.79초, 대기=0.00초
+[22105.54] WORKER1 | PROC | SUCCESS | KV[3656] 저장 완료, 처리=2.17초, 대기=0.00초
+[22108.25] WORKER1 | PROC | FAIL | KV[3661] 처리 실패, 20% 규칙
+[22109.25] WORKER1 | RECV | INFO | KV[3661] 우선 재시도 작업 수신, 대기열=1/10
+[22112.82] WORKER1 | PROC | SUCCESS | KV[3662] 저장 완료, 처리=2.57초, 대기=0.00초
+[22116.56] WORKER1 | PROC | SUCCESS | KV[3666] 저장 완료, 처리=2.74초, 대기=0.00초
+[22119.96] WORKER1 | PROC | SUCCESS | KV[3671] 저장 완료, 처리=2.40초, 대기=0.00초
+[22123.90] WORKER1 | PROC | SUCCESS | KV[3674] 저장 완료, 처리=2.94초, 대기=0.00초
+[22127.87] WORKER1 | PROC | SUCCESS | KV[3677] 저장 완료, 처리=2.97초, 대기=0.00초
+[22131.43] WORKER1 | PROC | FAIL | KV[3678] 처리 실패, 20% 규칙
+[22132.43] WORKER1 | RECV | INFO | KV[3678] 우선 재시도 작업 수신, 대기열=1/10
+[22136.32] WORKER1 | PROC | FAIL | KV[3685] 처리 실패, 20% 규칙
+[22137.32] WORKER1 | RECV | INFO | KV[3685] 우선 재시도 작업 수신, 대기열=1/10
+[22140.89] WORKER1 | PROC | SUCCESS | KV[3697] 저장 완료, 처리=2.57초, 대기=0.00초
+[22143.98] WORKER1 | PROC | SUCCESS | KV[3701] 저장 완료, 처리=2.09초, 대기=0.00초
+[22146.49] WORKER1 | PROC | SUCCESS | KV[3703] 저장 완료, 처리=1.51초, 대기=0.00초
+[22150.49] WORKER1 | PROC | SUCCESS | KV[3705] 저장 완료, 처리=3.00초, 대기=0.00초
+[22154.45] WORKER1 | PROC | FAIL | KV[3708] 처리 실패, 20% 규칙
+[22155.45] WORKER1 | RECV | INFO | KV[3708] 우선 재시도 작업 수신, 대기열=1/10
+[22157.46] WORKER1 | PROC | SUCCESS | KV[3711] 저장 완료, 처리=1.01초, 대기=0.00초
+[22159.89] WORKER1 | PROC | FAIL | KV[3713] 처리 실패, 20% 규칙
+[22160.89] WORKER1 | RECV | INFO | KV[3713] 우선 재시도 작업 수신, 대기열=1/10
+[22164.01] WORKER1 | PROC | SUCCESS | KV[3725] 저장 완료, 처리=2.12초, 대기=0.00초
+[22520.76] WORKER1 | PROC | FAIL | KV[3730] 처리 실패, 20% 규칙
+[22521.76] WORKER1 | RECV | INFO | KV[3730] 우선 재시도 작업 수신, 대기열=1/10
+[22524.84] WORKER1 | PROC | SUCCESS | KV[3738] 저장 완료, 처리=2.08초, 대기=0.00초
+[22528.13] WORKER1 | PROC | FAIL | KV[3765] 처리 실패, 20% 규칙
+[22529.13] WORKER1 | RECV | INFO | KV[3765] 우선 재시도 작업 수신, 대기열=1/10
+[22532.51] WORKER1 | PROC | SUCCESS | KV[3769] 저장 완료, 처리=2.38초, 대기=0.00초
+[22535.17] WORKER1 | PROC | SUCCESS | KV[3770] 저장 완료, 처리=1.66초, 대기=0.00초
+[22538.27] WORKER1 | PROC | SUCCESS | KV[0247] 저장 완료, 처리=2.10초, 대기=0.00초
+[22541.76] WORKER1 | PROC | SUCCESS | KV[0254] 저장 완료, 처리=2.49초, 대기=0.00초
+[22544.05] WORKER1 | PROC | FAIL | KV[0633] 처리 실패, 20% 규칙
+[22545.05] WORKER1 | RECV | INFO | KV[0633] 우선 재시도 작업 수신, 대기열=1/10
+[22547.28] WORKER1 | PROC | SUCCESS | KV[0644] 저장 완료, 처리=1.23초, 대기=0.00초
+[22550.59] WORKER1 | PROC | SUCCESS | KV[0462] 저장 완료, 처리=2.31초, 대기=0.00초
+[22554.43] WORKER1 | PROC | SUCCESS | KV[1678] 저장 완료, 처리=2.84초, 대기=0.00초
+[22558.14] WORKER1 | PROC | SUCCESS | KV[3865] 저장 완료, 처리=2.71초, 대기=0.00초
+[22561.50] WORKER1 | PROC | SUCCESS | KV[1024] 저장 완료, 처리=2.36초, 대기=0.00초
+[22564.38] WORKER1 | PROC | SUCCESS | KV[2090] 저장 완료, 처리=1.88초, 대기=0.00초
+[23478.31] WORKER1 | PROC | SUCCESS | KV[1087] 저장 완료, 처리=1.68초, 대기=0.00초
+[23481.03] WORKER1 | PROC | SUCCESS | KV[0812] 저장 완료, 처리=1.72초, 대기=0.00초
+[24606.08] WORKER1 | PROC | FAIL | KV[3546] 처리 실패, 20% 규칙
+[24607.08] WORKER1 | RECV | INFO | KV[3546] 우선 재시도 작업 수신, 대기열=1/10
+[24610.92] WORKER1 | PROC | SUCCESS | KV[3564] 저장 완료, 처리=2.84초, 대기=0.00초
+[24613.77] WORKER1 | PROC | SUCCESS | KV[3604] 저장 완료, 처리=1.85초, 대기=0.00초
+[24617.33] WORKER1 | PROC | SUCCESS | KV[3631] 저장 완료, 처리=2.56초, 대기=0.00초
+[24619.81] WORKER1 | PROC | SUCCESS | KV[3661] 저장 완료, 처리=1.48초, 대기=0.00초
+[24622.90] WORKER1 | PROC | SUCCESS | KV[3678] 저장 완료, 처리=2.09초, 대기=0.00초
+[24625.43] WORKER1 | PROC | SUCCESS | KV[3685] 저장 완료, 처리=1.53초, 대기=0.00초
+[24627.52] WORKER1 | PROC | SUCCESS | KV[3708] 저장 완료, 처리=1.09초, 대기=0.00초
+[24629.95] WORKER1 | PROC | SUCCESS | KV[3713] 저장 완료, 처리=1.43초, 대기=0.00초
+[24901.59] WORKER1 | PROC | SUCCESS | KV[3730] 저장 완료, 처리=1.35초, 대기=0.00초
+[24904.97] WORKER1 | PROC | SUCCESS | KV[3765] 저장 완료, 처리=2.38초, 대기=0.00초
+[24907.56] WORKER1 | PROC | SUCCESS | KV[0633] 저장 완료, 처리=1.59초, 대기=0.00초
+[24918.36] WORKER1 | RECV | INFO | KV[3991] 우선 재시도 작업 수신, 대기열=1/10
+[25039.01] WORKER1 | PROC | SUCCESS | KV[3546] 저장 완료, 처리=2.77초, 대기=0.00초
+[25059.38] WORKER1 | PROC | FAIL | KV[3991] 처리 실패, 20% 규칙
+[25060.38] WORKER1 | RECV | INFO | KV[3991] 우선 재시도 작업 수신, 대기열=1/10
+[25084.13] WORKER1 | PROC | SUCCESS | KV[3991] 저장 완료, 처리=2.22초, 대기=0.00초
+[25084.13] WORKER1 | STAT | INFO | === WORKER1 최종 통계 ===
+[25084.13] WORKER1 | STAT | INFO | 총 수신 작업: 717
+[25084.13] WORKER1 | STAT | SUCCESS | 성공: 580
+[25084.13] WORKER1 | STAT | FAIL | 실패: 137
+[25084.13] WORKER1 | STAT | INFO | 평균 대기 시간: 75.01초
+[25084.13] WORKER1 | STAT | INFO | P2P 작업 전송/수신: 0 / 0
+[25084.13] WORKER1 | STAT | INFO | 전체 수행 시간: 25084.13초
+[25084.13] WORKER1 | TERMINATE | SUCCESS | 워커1 정상 연결 해제
