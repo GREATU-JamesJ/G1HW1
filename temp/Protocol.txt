@@ -1,0 +1,82 @@
+통신 프로토콜 명세
+
+1. 공통 규칙
+
+- 문자 인코딩: UTF-8
+- 메시지 끝: 줄바꿈
+- 메시지 필드 구분: |
+- Task 필드 구분: ,
+- P2P 다중 Task 구분: ;
+
+2. Task 형식
+
+id,key,value,attempts,retry,enqueuedAt
+
+- id: 4자리 작업 번호
+- key: 고유 4자리 16진수 Key
+- value: 1~100 정수
+- attempts: 처리 시도 횟수
+- retry: 재시도 작업 여부(true/false)
+- enqueuedAt: Master 가상 시각(ms)
+
+예시
+
+0001,a3f7,83,0,false,1000
+
+3. Master - Worker 메시지
+
+Worker -> Master
+
+HELLO|workerId|p2pPort
+Worker 등록 요청
+
+STATUS|queueSize
+현재 Ready Queue 크기 보고
+
+RESULT|taskId|SUCCESS/FAIL|duration|wait|queueSize
+작업 처리 결과 보고
+
+P2P|SENT/RECEIVED|peerId|count|taskIds
+P2P 작업 전송 또는 수신 결과 보고
+
+TERMINATE_ACK
+종료 완료 응답
+
+Master -> Worker
+
+WELCOME|masterClockMillis
+Worker 등록 완료 및 Master 가상 시각 전달
+
+TASK|id,key,value,attempts,retry,enqueuedAt
+작업 배정
+
+RESULT_ACK|taskId|SUCCESS/FAIL|masterClockMillis
+처리 결과 확인 및 확정 가상 시각 전달
+
+P2P_ACK|SENT/RECEIVED|peerId|count|taskIds|masterClockMillis
+P2P 결과 확인 및 확정 가상 시각 전달
+
+TERMINATE|masterClockMillis
+정상 종료 요청 및 최종 가상 시각 전달
+
+REJECT|reason
+Worker 등록 거부
+
+4. Worker - Worker P2P 메시지
+
+TRANSFER|sourceWorkerId|task1;task2;...
+인접 Worker 작업 이전 요청
+
+ACK
+작업 수신 완료
+
+REJECT
+Queue 여유 공간 부족 또는 이전 거부
+
+5. 메시지 예시
+
+HELLO|1|6001
+TASK|0001,a3f7,83,0,false,1000
+RESULT|0001|SUCCESS|2.14|0.50|3
+P2P|SENT|2|3|KV[0088],KV[0089],KV[0090]
+TRANSFER|1|0088,b7c2,21,0,false,8000;0089,c2b5,55,0,false,8000

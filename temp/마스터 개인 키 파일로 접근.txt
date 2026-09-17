@@ -1,0 +1,1 @@
+ssh -i .\temp\master-node-key.pem ec2-user@32.236.94.251
