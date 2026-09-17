@@ -9,13 +9,9 @@
 2. 프로그램 구성요소
 
 src/DistributedKvApp.java: 실행 진입점, master 또는 workers 역할 선택
-
 src/MasterNode.java: Master Node, Worker 연결 수락, KV 생성, 동적 배정, 재시도, 통계, 종료
-
 src/WorkerNode.java: Worker Node, Worker Thread 4개, Ready Queue, 작업 처리, P2P 이전, Worker 로그
-
 src/Shared.java: 공통 구성요소, Task, VirtualClock, EventLogger, WorkerInfo
-
 AllDefinedLogs.txt: 로그 명세, 이벤트와 상태 코드 설명
 
 3. 실행 환경
@@ -47,7 +43,6 @@ Master의 Public IP를 입력하여 로컬 PC에서 실행한다.
   java -jar distributed-kv.jar workers 32.236.94.251 5000
 
 하나의 Worker 실행 명령은 Worker 1~4의 독립 Thread와 P2P 수신 포트 6001~6004를 생성한다.
-
 Worker 실행이 끝나면 현재 로컬 폴더에 Worker1.txt~Worker4.txt가 생성된다. Master 주소가 원격 주소이면 Worker1은 종료 단계에서 TCP로 Master.txt를 수신하여 같은 로컬 폴더에 저장한다.
 
 5. 동적 작업 분배 알고리즘
@@ -74,10 +69,9 @@ Worker 실행이 끝나면 현재 로컬 폴더에 Worker1.txt~Worker4.txt가 �
 
 6. P2P 부하 분산 알고리즘
 
-5-2. 알고리즘명: 링(Ring) 토폴로지 기반 후단 작업 이전
+6-1. 알고리즘명: 링(Ring) 토폴로지 기반 후단 작업 이전
 
 Worker 연결 순서는 Worker1 -> Worker2 -> Worker3 -> Worker4 -> Worker1이다.
-
 1) Worker는 가상 시간 기준 1~3초 랜덤 주기로 부하를 확인한다.
 2) 예상 대기시간을 Queue 크기 x 평균 처리시간 2초로 계산한다.
 3) 예상 대기시간이 15초를 초과하면 다음 Worker에 작업 이전을 요청한다.
