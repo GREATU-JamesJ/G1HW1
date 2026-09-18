@@ -76,7 +76,7 @@ class EventLogger implements AutoCloseable {
 
     // 로그 파일 생성
     EventLogger(String filename) throws IOException {
-        writer = Files.newBufferedWriter(Path.of(filename), StandardOpenOption.CREATE,
+        writer = Files.newBufferedWriter(RunSession.output(filename), StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE);
     }
 
@@ -91,7 +91,8 @@ class EventLogger implements AutoCloseable {
         } catch (IOException e) {
             throw new RuntimeException("로그 기록 실패", e);
         }
-        System.out.println(line);
+        if (RunSession.current == null) System.out.println(line);
+        else RunSession.current.event(clock, node, event, status, message, line);
     }
 
     // 로그 파일 제목 출력

@@ -1,0 +1,3 @@
+# Keep the Bash launcher runnable after a Windows checkout.
+run-workers.sh text eol=lf
+run-workers.cmd text eol=crlf

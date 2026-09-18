@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.InetSocketAddress;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayDeque;
@@ -28,7 +29,12 @@ class WorkerNode implements Runnable {
     private final Map<String, PendingResult> pendingResults = new ConcurrentHashMap<>();
     private final ByteArrayOutputStream masterLogBytes = new ByteArrayOutputStream();
     private final CountDownLatch masterLogReceived = new CountDownLatch(1);
-    private boolean stopping;
+    private volatile boolean stopping;
+    private volatile boolean terminatedByMaster;
+    private volatile boolean masterLogSaved;
+    private volatile boolean closing;
+    private ServerSocket peerServer;
+    private Thread peerThread;
     private long masterClockMillis;
     private long workerAvailableAt;
     private long nextLoadCheck;
@@ -57,6 +63,7 @@ class WorkerNode implements Runnable {
             Thread thread = new Thread(new WorkerNode(workerId, host, port, 6000 + workerId),
                     "worker-" + workerId);
             threads.add(thread);
+            thread.setUncaughtExceptionHandler((t, e) -> RunSession.current.error(t.getName() + ": " + e));
             thread.start();
         }
         for (Thread thread : threads) thread.join();
@@ -70,7 +77,9 @@ class WorkerNode implements Runnable {
             log.header("Worker" + id + ".txt (Worker Node " + id + " Log)",
                     "Worker" + id + " | Thread-based Worker | Ready Queue max=10");
             writeAt(0, "INIT", "INFO", "워커 Thread 시작, 마스터 연결 시도");
-            try (Socket socket = new Socket(masterHost, masterPort)) {
+            try (Socket socket = new Socket()) {
+                socket.connect(new InetSocketAddress(masterHost, masterPort), 10000);
+                socket.setSoTimeout(30000);
                 startPeerListener();
                 masterOut = new PrintWriter(socket.getOutputStream(), true);
                 sendMaster("HELLO|" + id + "|" + peerPort);
@@ -78,14 +87,33 @@ class WorkerNode implements Runnable {
                         "worker-master-reader-" + id);
                 receiver.setDaemon(true);
                 receiver.start();
-                processLoop();
-                if (id == 1 && isRemoteMaster()) sendMaster("LOG_REQUEST");
-                sendMaster("TERMINATE_ACK");
-                writeFinalStatistics();
-                waitForMasterLog();
+                try {
+                    processLoop();
+                    if (terminatedByMaster) {
+                        if (id == 1) sendMaster("LOG_REQUEST");
+                        sendMaster("TERMINATE_ACK");
+                        waitForMasterLog();
+                        // Let Master consume the ACK before closing a socket that may still have unread data.
+                        if (id != 1) receiver.join(15000);
+                    }
+                } finally {
+                    closing = true;
+                    stopping = true;
+                    socket.close();
+                    if (peerServer != null) peerServer.close();
+                    receiver.join();
+                    if (peerThread != null) peerThread.join();
+                }
+                if (terminatedByMaster) writeFinalStatistics();
+            } catch (IOException | InterruptedException | RuntimeException e) {
+                stopping = true;
+                if (peerServer != null) peerServer.close();
+                if (e instanceof InterruptedException) Thread.currentThread().interrupt();
+                RunSession.current.error("Worker" + id + " 연결/처리 실패: " + e.getMessage());
+                writeAt(masterClockMillis, "CONNECT", "FAIL", "연결/처리 실패: " + e.getMessage());
             }
         } catch (IOException e) {
-            writeAt(masterClockMillis, "CONNECT", "FAIL", "마스터 연결 실패: " + e.getMessage());
+            RunSession.current.error("Worker" + id + " 로그 파일 오류: " + e.getMessage());
         }
     }
 
@@ -105,6 +133,7 @@ class WorkerNode implements Runnable {
                     case "RESULT_ACK" -> receiveResultAck(p);
                     case "P2P_ACK" -> receiveP2pAck(p);
                     case "TERMINATE" -> {
+                        terminatedByMaster = true;
                         if (p.length > 1) updateMasterClock(Long.parseLong(p[1]));
                         synchronized (queueLock) {
                             stopping = true;
@@ -117,27 +146,35 @@ class WorkerNode implements Runnable {
                     default -> write("PROTO", "WARN", "알 수 없는 마스터 메시지: " + line);
                 }
             }
-        } catch (IOException ignored) {
+            if (!terminatedByMaster && !closing) RunSession.current.error("Worker" + id + ": Master가 종료 신호 없이 연결을 닫았습니다.");
+        } catch (IOException | RuntimeException e) {
+            if (!closing && (!terminatedByMaster || e instanceof RuntimeException)) {
+                RunSession.current.error("Worker" + id + " Master 수신 오류: " + e.getMessage());
+            }
+        } finally {
             synchronized (queueLock) {
                 stopping = true;
                 queueLock.notifyAll();
             }
+            masterLogReceived.countDown();
         }
     }
 
     // Master 로그 조각 수신
     private void receiveMasterLogChunk(String[] p) {
-        if (p.length < 2) return;
+        if (p.length < 2) throw new IllegalArgumentException("Master 로그 조각 누락");
         try {
             masterLogBytes.write(java.util.Base64.getDecoder().decode(p[1]));
-        } catch (IOException | IllegalArgumentException ignored) { }
+        } catch (IOException e) { throw new java.io.UncheckedIOException(e); }
     }
 
     // Master 로그를 Worker 실행 폴더에 저장
     private void saveMasterLog() {
         try {
-            Files.write(Path.of("Master.txt"), masterLogBytes.toByteArray());
-        } catch (IOException ignored) {
+            Files.write(RunSession.output("Master.txt"), masterLogBytes.toByteArray());
+            masterLogSaved = true;
+        } catch (IOException e) {
+            RunSession.current.error("Master 로그 저장 실패: " + e.getMessage());
         } finally {
             masterLogReceived.countDown();
         }
@@ -145,19 +182,13 @@ class WorkerNode implements Runnable {
 
     // Worker1의 Master 로그 수신 대기
     private void waitForMasterLog() {
-        if (id != 1 || !isRemoteMaster()) return;
+        if (id != 1) return;
         try {
             masterLogReceived.await(15, TimeUnit.SECONDS);
+            if (!masterLogSaved) System.err.println("[확인 필요] Master 로그를 수신하지 못했습니다. 최종 결과는 부분 확인으로 표시합니다.");
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
-    }
-
-    // 원격 Master 연결 여부 확인
-    private boolean isRemoteMaster() {
-        return !"localhost".equalsIgnoreCase(masterHost)
-                && !"127.0.0.1".equals(masterHost)
-                && !"::1".equals(masterHost);
     }
 
     // Master 확정 결과 시각 반영
@@ -286,6 +317,7 @@ class WorkerNode implements Runnable {
         try (Socket peer = new Socket("127.0.0.1", 6000 + target);
              BufferedReader in = new BufferedReader(new InputStreamReader(peer.getInputStream()));
              PrintWriter out = new PrintWriter(peer.getOutputStream(), true)) {
+            peer.setSoTimeout(5000);
             out.println("TRANSFER|" + id + "|" + data);
             return "ACK".equals(in.readLine());
         } catch (IOException e) {
@@ -294,13 +326,15 @@ class WorkerNode implements Runnable {
     }
 
     // P2P 작업 수신 서버 시작
-    private void startPeerListener() {
-        Thread peerThread = new Thread(() -> {
-            try (ServerSocket server = new ServerSocket(peerPort)) {
+    private void startPeerListener() throws IOException {
+        peerServer = new ServerSocket(peerPort);
+        peerThread = new Thread(() -> {
+            try (ServerSocket server = peerServer) {
                 while (!stopping) {
                     try (Socket peer = server.accept();
                          BufferedReader in = new BufferedReader(new InputStreamReader(peer.getInputStream()));
                          PrintWriter out = new PrintWriter(peer.getOutputStream(), true)) {
+                        peer.setSoTimeout(5000);
                         String line = in.readLine();
                         if (line == null) continue;
                         String[] p = line.split("\\|", 3);
@@ -328,7 +362,8 @@ class WorkerNode implements Runnable {
                         } else out.println("REJECT");
                     }
                 }
-            } catch (IOException ignored) {
+            } catch (IOException | RuntimeException e) {
+                if (!stopping) RunSession.current.error("Worker" + id + " P2P 수신 오류: " + e.getMessage());
             }
         }, "worker-peer-listener-" + id);
         peerThread.setDaemon(true);
